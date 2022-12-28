@@ -151,7 +151,7 @@ export const content = {
       ],
     },
     {
-      title: "Frameworks/Libraries",
+      title: "Frameworks/ Libraries",
       items: [
         {
           id: "f-1",

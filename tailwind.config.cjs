@@ -14,12 +14,12 @@ module.exports = {
     extend: {
       colors: {
         dark_primary: "#06223F",
-        bg_light_primary: "#F5F9FD",
+       bg_light_primary : "#F5F9FD",
         light_secondary: "#8f8d8d",
         gray: "#000"
       },
       backgroundImage: {
-        secondaryLinear: "linear-gradient(120deg, #06223F, #B6CCF5 150%)",
+        secondaryLinear: "linear-gradient(360deg, #43698f , #B6CCF5 200%)",
         primaryLinear: "linear-gradient(360deg, #D5E3F1, #B6CCF5)",
         primaryLinearNav: "linear-gradient(135deg , #D5E3F1 , #B6CCF5 60%)",
       },

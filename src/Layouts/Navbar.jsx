@@ -48,7 +48,7 @@ const Navbar = () => {
         />
 
         <div
-          className={`${toggle ? "flex" : "hidden"} p-6 bg-black-gradient
+          className={`${toggle ? "flex" : "hidden"} p-6 bg-dark_primary
         absolute top-20 right-0 mx-4 my-2
         min-w-[140px] rounded-xl sidebar`}
         >
@@ -60,8 +60,10 @@ const Navbar = () => {
                 font-normal
                 cursor-pointer
                 text-[16px]
+                text-center
                 ${index === navs.length - 1 ? "mb-0" : "mb-4"}
                 text-white`}
+                onClick={()=>setToggle(!toggle)}
               >
                 <a href={`${nav.link}`}>{nav.title}</a>
               </li>

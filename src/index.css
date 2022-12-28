@@ -9,6 +9,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #bfd7fb -78.47%,
+    #a8c8f0 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --scrollbar-primary: #00040f;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -99,4 +110,12 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+.feedback-card {
+  background: transparent;
 }

@@ -8,10 +8,10 @@ const skillsList = content.skillsList
 export const SkillIcon = ({ icon, name }) => {
   return (
     <div className="flex flex-col">
-      <span className="text-[#5b86cd] text-[30px] hover:text-white">
+      <span className="text-[#6ba0f5] text-[30px] hover:text-white">
         {React.createElement(icon)}
       </span>
-      <p className="font-poppins text-dimWhite text-[12px] mt-2">{name}</p>
+      <p className="font-poppins text-[#caddf7] text-[12px] mt-2">{name}</p>
     </div>
   );
 };
@@ -19,13 +19,13 @@ export const SkillIcon = ({ icon, name }) => {
 const SkillCard = (props) => {
   return (
     <motion.div
-      whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+      whileInView={{ x: [20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
-      className="mt-4 mb-6 border-l border-gray-200 dark:border-gray-700 mx-4"
-    >
-      <div className="relative w-3 h-3 bg-gray-200 rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-gray-700"></div>
-      <div className="flex flex-row items-center mb-6 ml-6">
-        <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px]">
+      className="mt-4 border-l border-gray-200 dark:border-gray-700 mx-0 sm:mx-4"
+    > 
+      <div className="relative w-3 h-3 bg-bg_light_primary rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-gray-700"></div>
+      <div className="flex flex-row items-center sm:mb-6 mb-0 ml-6">
+        <h4 className="font-poppins font-semibold text-[20px] leading-[32px]">
           {props.title}
         </h4>
       </div>
@@ -41,7 +41,7 @@ const SkillCard = (props) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className=" mb-10 sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screen pt-4">
+    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screen pt-4">
       <h1 data-aos="zoom-in" data-aos-once="false" className="flex-1 font-poppins text-bg_light_primary font-semibold ss:text-[55px] text-[45px] ss:leading-[80px] leading-[80px]">
         Skills
       </h1>

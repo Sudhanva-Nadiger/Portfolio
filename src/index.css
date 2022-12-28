@@ -1,0 +1,102 @@
+/* Inria serif */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap");
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Paprika */
+@import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    @apply text-dark_primary;
+  }
+  h1 {
+    @apply font-Poppins sm:text-6xl text-4xl font-extrabold;
+  }
+
+  h2 {
+    @apply font-Inria sm:text-5xl text-3xl font-bold;
+  }
+  h3 {
+    @apply font-Paprika text-5xl;
+  }
+  h4 {
+    @apply md:text-4xl text-3xl !leading-relaxed font-Paprika;
+  }
+  h6 {
+    @apply font-Paprika font-bold text-[#253D57] leading-8;
+  }
+
+  p {
+    @apply font-Poppins text-[0.95rem];
+  }
+  button {
+    @apply font-Poppins;
+  }
+  input,
+  textarea {
+    @apply bg-transparent outline-none font-Poppins;
+  }
+}
+
+@layer utilities {
+  .btn {
+    @apply py-2 px-9 border-2 rounded-md
+     border-dark_primary rounded-br-3xl font-medium;
+  }
+  .title {
+    @apply md:text-3xl text-2xl;
+  }
+  .subtitle {
+    @apply text-gray;
+  }
+}
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-dark_primary;
+}
+
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #B6CCF5 0.89%,
+    #7ca5f3 17.23%,
+    #769fea 42.04%,
+    #5a8ce8 55.12%,
+    #4a85f4 71.54%,
+    #0a58ea 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-gradient2 {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #171e32 0.89%,
+    #22324f 17.23%,
+    #193d80 42.04%,
+    #153570 55.12%,
+    #0c2045 71.54%,
+    #040b19 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

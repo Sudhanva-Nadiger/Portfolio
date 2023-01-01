@@ -8,7 +8,7 @@ const skillsList = content.skillsList
 export const SkillIcon = ({ icon, name }) => {
   return (
     <div className="flex flex-col">
-      <span className="text-[#6ba0f5] text-[30px] hover:text-white">
+      <span className="text-[#a8b6f1] text-[30px] hover:text-white">
         {React.createElement(icon)}
       </span>
       <p className="font-poppins text-[#caddf7] text-[12px] mt-2">{name}</p>

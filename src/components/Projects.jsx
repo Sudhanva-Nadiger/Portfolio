@@ -1,58 +1,89 @@
-import { content } from "../Content";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
+import { projects } from "../Content";
+import { AiFillGithub } from "react-icons/ai";
+import { BsLink45Deg } from "react-icons/bs";
+import { motion } from "framer-motion";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
+const Project = (props) => {
+  return (
+    <motion.div
+      className="proj feature-card hover:text-white px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent"
+      whileInView={{ y: [-40, 0], opacity: [0, 1] }}
+      transition={{ duration: 1 }}
+    >
+      <div className="flex flex-col sm:-mx-4 sm:flex-row">
+        <img
+          className="flex-shrink-0 bg-white object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
+          src={props.image}
+          alt=""
+        />
 
-import { Pagination } from "swiper";
+        <div className="mt-4 sm:mx-4 sm:mt-0">
+          <h1 className="text-xl font-semibold font-poppins text-gray-700 capitalize md:text-2x">
+            {props.title}
+          </h1>
+          <p className="font-poppins font-normal text-dimWhite mt-3">
+            Tech Stack
+          </p>
+          <div className="mt-2 text-gray-500 capitalize dark:text-gray-300">
+            <p className="flex sm:flex-row">
+              {props.stack.map((tech, index) => (
+                <div
+                  key={tech.id}
+                  index={index}
+                  className="text-dimWhite mr-5 text-[20px] hover:text-[#8dbbeb] tooltip"
+                >
+                  {React.createElement(tech.icon)}
+                  <span class="tooltiptext">{tech.name}</span>
+                </div>
+              ))}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p className="mt-8 p font-poppins text-[#414551]">
+        {props.content}
+      </p>
+
+      <div className="flex mt-4 -mx-2">
+        {props.github ? (
+          <a href={props.github} target="_blank">
+            <AiFillGithub
+              size="2rem"
+              className="text-white mr-1 hover:text-[#8dbbeb]"
+            ></AiFillGithub>
+          </a>
+        ) : (
+          ""
+        )}
+        {props.link ? (
+          <a href={props.link} target="_blank">
+            <BsLink45Deg
+              size="2rem"
+              className="text-white hover:text-[#8dbbeb]"
+            ></BsLink45Deg>
+          </a>
+        ) : (
+          ""
+        )}
+      </div>
+    </motion.div>
+  );
+};
 
 const Projects = () => {
-  const { Projects } = content;
   return (
-    <section className="bg-bg_light_primary" id="projects">
-      <div className="md:container px-5 pt-14 min-h-screen flex flex-col justify-between">
-        <div>
-          <h2 className="title" data-aos="fade-down">
-            {Projects.title}
-          </h2>
-          <h4 className="subtitle" data-aos="fade-down">
-            {Projects.subtitle}
-          </h4>
-          <br />
-        </div>
-        <div className="flex items-center lg:flex-row flex-col-reverse gap-5">
-          <img
-            src={Projects.image}
-            alt="..."
-            data-aos="fade-right"
-            className="max-w-[45vw] min-w-[22rem]"
-          />
-          <Swiper
-            pagination={{
-              clickable: true,
-            }}
-            data-aos="fade-left"
-            spaceBetween={20}
-            modules={[Pagination]}
-            className="rounded-3xl pb-16 max-w-xs drop-shadow-primary self-start"
-          >
-            {Projects.project_content.map((content, i) => (
-              <SwiperSlide
-                key={i}
-                className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
-              >
-                <img src={content.image} alt="..." />
-                <div className="flex flex-col gap-1 mt-2">
-                  <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <button className="font-bold text-gray self-end">
-                    READ MORE
-                  </button>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+    <section id="projects" className="bg-secondaryLinear sm:px-16 px-6 min-h-screen pt-4" >
+      <h1 className="flex-1 font-Poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
+        Projects
+      </h1>
+
+      <div className="container px-2 py-10 mx-auto mb-8">
+        <div className="grid grid-cols-1 gap-8 mt-8 sm:mt-1 md:grid-cols-2">
+          {projects.map((project, index) => (
+            <Project key={project.id} index={index} {...project} />
+          ))}
         </div>
       </div>
     </section>

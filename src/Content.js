@@ -26,7 +26,14 @@ import {
   SiHtml5,
   SiRuby,
   SiVite,
-  SiCss3
+  SiCss3,
+  SiMongodb,
+  SiRedux,
+  SiJava,
+  SiDart,
+  SiFlutter,
+  SiExpress,
+  SiIntellijidea
 } from "react-icons/si";
 
 import {
@@ -44,10 +51,11 @@ import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
-import person_project from "./assets/images/projects/person.png";
+import bookmark from "./assets/images/Projects/bookmark.jfif";
+import bank from "./assets/images/projects/bank.jpg";
+import keep_notes from "./assets/images/projects/keepNotes.png";
+import movie_land from "./assets/images/projects/movieLand.jfif";
+import tindog from "./assets/images/projects/tindog.png";
 
 import avatar1 from "./assets/images/Testimonials/avatar1.png";
 import avatar2 from "./assets/images/Testimonials/avatar2.png";
@@ -120,8 +128,8 @@ export const content = {
         },
         {
           id: "pl-3",
-          icon: SiRuby,
-          name: "Ruby",
+          icon: SiJava,
+          name: "JAVA",
         },
         {
           id: "pl-4",
@@ -145,8 +153,8 @@ export const content = {
         },
         {
           id: "pl-8",
-          icon: SiSolidity,
-          name: "Solidity",
+          icon: SiDart,
+          name: "Dart",
         },
       ],
     },
@@ -155,38 +163,43 @@ export const content = {
       items: [
         {
           id: "f-1",
-          icon: SiDjango,
-          name: "Django",
-        },
-        {
-          id: "f-2",
-          icon: SiRubyonrails,
-          name: "Ruby on Rails",
-        },
-        {
-          id: "f-3",
           icon: SiReact,
           name: "ReactJS",
         },
         {
-          id: "f-4",
+          id: "f-2",
+          icon: SiRedux,
+          name: "Redux",
+        },
+        {
+          id: "f-3",
           icon: SiBootstrap,
           name: "Bootstrap",
         },
         {
-          id: "f-5",
+          id: "f-4",
           icon: SiTailwindcss,
           name: "Tailwind CSS",
         },
         {
-          id: "f-6",
+          id: "f-5",
           icon: SiJquery,
           name: "jQuery",
         },
         {
-          id: "f-7",
+          id: "f-10",
+          icon: SiExpress,
+          name: "Express",
+        },
+        {
+          id: "f-6",
           icon: SiGraphql,
           name: "GraphQL",
+        },
+        {
+          id: "f-7",
+          icon: SiFlutter,
+          name: "Flutter",
         },
       ],
     },
@@ -198,11 +211,7 @@ export const content = {
           icon: SiMysql,
           name: "MySQL",
         },
-        {
-          id: "t-2",
-          icon: SiPostman,
-          name: "Postman",
-        },
+       
         {
           id: "t-3",
           icon: SiVisualstudiocode,
@@ -219,11 +228,6 @@ export const content = {
           name: "GitHub",
         },
         {
-          id: "t-6",
-          icon: AiOutlineGitlab,
-          name: "Gitlab",
-        },
-        {
           id: "t-7",
           icon: SiNetlify,
           name: "Netlify",
@@ -232,6 +236,11 @@ export const content = {
           id: "t-8",
           icon: SiVite,
           name: "ViteJS",
+        },
+        {
+          id: "t-8",
+          icon: SiIntellijidea,
+          name: "IntelliJ",
         },
       ],
     },
@@ -257,25 +266,7 @@ export const content = {
       },
     ],
   },
-  Projects: {
-    title: "Projects",
-    subtitle: "MY CREATION",
-    image: person_project,
-    project_content: [
-      {
-        title: "Gym Website",
-        image: project1,
-      },
-      {
-        title: "Social Media web",
-        image: project2,
-      },
-      {
-        title: "Creative Website",
-        image: project3,
-      },
-    ],
-  },
+  
   Testimonials: {
     title: "Testimonials",
     subtitle: "MY CLIENT REVIEWS",
@@ -350,4 +341,181 @@ export const educationList = [
     content1: "Major: Mechanical Engineering",
     content2: "Minor: Information Technology",
   },
+];
+
+export const projects = [
+  {
+    id: "project-1",
+    title: "Bookmark App",
+    github: "https://github.com/Sudhanva-Nadiger/Book-Mark-App",
+    link: "",
+    image: bookmark,
+    content:
+      "A full-stack web application that allows user to bookmark their favorite or frqunetly used website at one place without having it to search it again and again. ",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiMongodb,
+        name: "MongoDB"
+      },
+      {
+        id: "icon-2",
+        icon: AiFillHtml5,
+        name: "HTML"
+      },
+      {
+        id: "icon-3",
+        icon: SiCss3,
+        name: "CSS"
+      },
+      {
+        id: "icon-4",
+        icon: SiReact,
+        name: "React"
+      },
+    ],
+  },
+  {
+    id: "project-2",
+    title: "Bank Landing Page",
+    github: "https://github.com/Sudhanva-Nadiger/Modern_Bank_App",
+    link: "https://sudhanva-nadiger.github.io/Modern_Bank_App/index.html",
+    image: bank,
+    content:
+      "A landing page for a bank with modern UI/UX using React and Tailwind.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTailwindcss,
+        name: "Tailwind CSS"
+      },
+      
+    ],
+  },
+  {
+    id: "project-3",
+    title: "Keep Notes",
+    github: "https://github.com/Sudhanva-Nadiger/Keep-Notes-App",
+    link: "",
+    image: keep_notes,
+    content: "A progressive note taking application developed using React and CSS. ",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiCss3,
+        name: "CSS"
+      },
+      
+    ],
+  },
+  {
+    id: "project-4",
+    title: "Movie Land",
+    github: "https://github.com/Sudhanva-Nadiger/Movie_Land-2",
+    link: "",
+    image: movie_land,
+    content:
+      "A web application that easily provides guidance about any Movies & Tv shows.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-4",
+        icon: SiRedux,
+        name: "Redux Toolkit"
+      },
+      {
+        id: "icon-5",
+        icon: SiCss3,
+        name: "CSS"
+      },
+    ],
+  },
+  {
+    id: "project-5",
+    title: "Tin Dog",
+    github: "https://github.com/Sudhanva-Nadiger/Tin-Dog-Website",
+    link: "https://sudhanva-nadiger.github.io/Tin-Dog-Website/TinDog/",
+    image: tindog,
+    content:
+      "A home page website which provides details of the application to the end user like the desscription of the website, from where we can download the application, a section that displays the feedback from the clients and different plans and subscriptions.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiHtml5,
+        name: "HTML"
+      },
+      {
+        id: "icon-3",
+        icon: SiCss3,
+        name: "CSS"
+      },
+    ],
+  },
+  // {
+  //   id: "project-6",
+  //   title: "GraphQL API",
+  //   github: "https://github.com/mittal-parth/GSDC-NITK-CRUD-API",
+  //   link: "",
+  //   image: graphql,
+  //   content:
+  //     "A Django based CRUD API using GraphQL to manage employees in an organization.",
+  //   stack: [
+  //     {
+  //       id: "icon-1",
+  //       icon: SiGraphql,
+  //       name: "GraphQL"
+  //     },
+  //     {
+  //       id: "icon-2",
+  //       icon: SiDjango,
+  //       name: "Django"
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "project-7",
+  //   title: "To-Do App 2.0",
+  //   github: "https://github.com/mittal-parth/To-Do-App-2.0",
+  //   link: "",
+  //   image: todo,
+  //   content:
+  //     "A Progressive Web Application with Google OAuth, media and speech to text features.",
+  //   stack: [
+  //     {
+  //       id: "icon-1",
+  //       icon: SiDjango,
+  //       name: "Django"
+  //     },
+
+  //     {
+  //       id: "icon-2",
+  //       icon: AiOutlineGoogle,
+  //       name: "Google OAuth"
+  //     },
+  //     {
+  //       id: "icon-3",
+  //       icon: AiFillHtml5,
+  //       name: "HTML"
+  //     },
+  //     {
+  //       id: "icon-4",
+  //       icon: DiCss3,
+  //       name: "CSS"
+  //     },
+  //   ],
+  // },
 ];

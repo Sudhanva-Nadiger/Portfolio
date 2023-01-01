@@ -9,6 +9,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 :root{
   --black-gradient: linear-gradient(
     144.39deg,
@@ -16,9 +19,45 @@
     #bfd7fb -78.47%,
     #a8c8f0 91.61%
   );
+  --black-gradient2: linear-gradient(
+    144.39deg,
+    #5fb2f6 -278.56%,
+    #4c73ae -78.47%,
+    #4a709f 91.61%
+  );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-  --scrollbar-primary: #00040f;
+  --scrollbar-primary: #B6CCF5;
+  --scrollbar-secondary: rgb(95, 148, 239);
 }
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-secondary) var(--scrollbar-primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-primary);
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-secondary);
+  border-radius: 14px;
+  border: 3px solid var(--scrollbar-primary);
+}
+
+
+
 
 @layer base {
   html {
@@ -116,6 +155,52 @@
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
 }
+#projects .feature-card:hover {
+  background: var(--black-gradient2);
+  box-shadow: var(--card-shadow);
+}
+
 .feedback-card {
   background: transparent;
 }
+
+.proj:hover .p{
+  color: rgb(182, 194, 199);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+

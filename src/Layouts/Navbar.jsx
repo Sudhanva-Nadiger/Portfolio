@@ -3,7 +3,6 @@ import { useState } from "react";
 import close from '../assets/images/close.svg'
 import menu from '../assets/images/menu.svg'
 
-import logo from "../assets/images/logo.png"
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const { nav } = content
@@ -12,11 +11,11 @@ const Navbar = () => {
     <nav className="w-full z-10 flex justify-between items-center absolute left-0 top-0 bg-transparent">
       {/* Logo */}
       <a href="#home">
-        <img
-          src={logo}
-          alt="Sudhanva"
-          className="w-[150px] bg-transparent"
-        />
+        <p className="w-full bg-transparent p-5 font-semibold text-dark_primary font-Paprika">
+          <span className="text-[#4452d4]" >&lt;&gt; </span> 
+          Sudhanva 
+          <span className="text-[#4452d4]"> &lt;/&gt;</span>
+        </p>
       </a>
 
       {/* List of links */}

@@ -1,5 +1,5 @@
 // import content
-import { useEffect } from "react";
+import { motion } from 'framer-motion'
 import Lottie from "react-lottie";
 import { content } from "../Content";
 const Hero = () => {
@@ -17,7 +17,11 @@ const Hero = () => {
 
 
 	return (
-		<section id="home" className="overflow-hidden bg-primaryLinear md:bg-none">
+		<motion.section
+			initial={{ x: -100, opacity: 0.25 }}
+			animate={{ x: 0, opacity: 1.5 }}
+			transition={{ duration: 1, type: 'spring', stiffness:"120" }}
+			id="home" className="overflow-hidden bg-primaryLinear md:bg-none">
 			<div className="min-h-screen relative flex lg:flex-row flex-col justify-center items-center">
 				<div
 					data-aos="slide-right"
@@ -27,19 +31,19 @@ const Hero = () => {
 				</div>
 
 				{/* first col */}
-				<div className="pb-1 pt-5 mt-20 w-auto flex flex-col" data-aos="fade-down">
+				<div className="pb-1 pt-5 mt-10  w-auto flex flex-col">
 					<div className='flex flex-col justify-between items-center w-full p-1'>
-						<h2 className='flex-1 flex flex-col items-center text-center font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]'>
+						<h2 className='flex-1 flex flex-col items-center font-Inria text-center font-semibold text-[52px] text-white leading-[75px]'>
 							{hero.title}
-							<br className='sm:hidden block' /> {" "}
+							<br className='xs:hidden block' /> {" "}
 							{hero.sub1 + " "}
 							<br className='block' /> {" "}
 							{hero.sub2}
 						</h2>
-						<div className="flex flex-col w-full items-center">
-							<h1 className=" text-dark_primary">
+						<div className="flex flex-col w-full items-center ">
+							<h1 className=" text-dark_primary font-Poppins text-[56px] leading-[70px]">
 								{hero.firstName}
-								<span className="text-dark_primary"> <h1 className=" text-center" >{hero.LastName}</h1></span>
+								<span className="text-dark_primary"> <h1 className="text-[56px] sm:text-inherit text-center font-Poppins leading-[75px]" >{hero.LastName}</h1></span>
 							</h1>
 						</div>
 					</div>
@@ -49,14 +53,14 @@ const Hero = () => {
 
 					<div className="text-center">
 						{hero.hero_content.map((content, i) => (
-							<div
+							<motion.div
+								whileInView={{ y: [20, 0], opacity: [0, 1] }}
+								transition={{ duration: 1, type: 'spring', stiffness:"120" }}
 								key={i}
-								data-aos="fade-down"
-								data-aos-delay={i * 300}
 								className={`flex items-center w-auto xs:w-80 gap-1 ${i === 1 && " flex-row-reverse text-right"}  `}>
 								<h3>{content.count}</h3>
 								<p className="text-light_secondary">{content.text}</p>
-							</div>
+							</motion.div>
 						))}
 					</div>
 				</div>
@@ -66,7 +70,7 @@ const Hero = () => {
 					< Lottie options={defaultOptions} />
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

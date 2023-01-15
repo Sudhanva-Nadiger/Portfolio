@@ -20,7 +20,7 @@ const SkillCard = (props) => {
   return (
     <motion.div
       whileInView={{ x: [20, 0], opacity: [0, 1] }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, type: 'spring', stiffness:"120" }}
       className="mt-4 border-l border-gray-200 dark:border-gray-700 mx-0 sm:mx-4"
     > 
       <div className="relative w-3 h-3 bg-bg_light_primary rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-gray-700"></div>
@@ -41,10 +41,13 @@ const SkillCard = (props) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screen pt-4">
-      <h1 data-aos="zoom-in" data-aos-once="false" className="flex-1 font-poppins text-bg_light_primary font-semibold ss:text-[55px] text-[45px] ss:leading-[80px] leading-[80px]">
+    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screenn pt-4">
+      <motion.h1
+       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+       transition={{ duration: 1, type: 'spring', stiffness:"120"}}
+       className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-16 px-5 ss:leading-[80px] leading-[80px] text-white">
         Skills
-      </h1>
+      </motion.h1>
       <div
        className={"flex md:flex-row flex-col sm:py-10 py-6" }
       // whileInView={{ y: [-20, 0], opacity: [0, 1] }}

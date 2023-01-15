@@ -74,11 +74,11 @@
     @apply text-dark_primary;
   }
   h1 {
-    @apply font-Poppins sm:text-6xl text-4xl font-extrabold;
+    @apply  sm:text-6xl text-4xl font-extrabold;
   }
 
   h2 {
-    @apply font-Inria sm:text-5xl text-3xl font-bold;
+    @apply  sm:text-5xl text-3xl font-bold;
   }
   h3 {
     @apply font-Paprika text-5xl;

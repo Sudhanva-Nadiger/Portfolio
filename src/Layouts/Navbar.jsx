@@ -2,21 +2,17 @@ import { content } from "../Content";
 import { useState } from "react";
 import close from '../assets/images/close.svg'
 import menu from '../assets/images/menu.svg'
+import Logo from "../components/Logo";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const { nav } = content
   const navs = nav;
+
   return (
     <nav className="w-full z-10 flex justify-between items-center absolute left-0 top-0 bg-transparent">
       {/* Logo */}
-      <a href="#home">
-        <p className="w-full bg-transparent p-5 font-semibold text-dark_primary font-Paprika">
-          <span className="text-[#4452d4]" >&lt;&gt; </span> 
-          Sudhanva 
-          <span className="text-[#4452d4]"> &lt;/&gt;</span>
-        </p>
-      </a>
+      <Logo />
 
       {/* List of links */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1">

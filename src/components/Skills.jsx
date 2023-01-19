@@ -24,12 +24,13 @@ const SkillCard = (props) => {
       transition={{ duration: 1, type: 'spring', stiffness:"120" }}
       className="mt-4 border-l border-gray-200 dark:border-gray-700 mx-0 sm:mx-4"
     > 
-      <div className="relative w-3 h-3 bg-bg_light_primary rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-gray-700"></div>
+      <div className="relative w-3 h-3 bg-bg_light_primary rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-white"></div>
       <div className="flex flex-row items-center sm:mb-6 mb-0 ml-6">
         <h4 className="font-poppins font-semibold text-[20px] leading-[32px]">
           {props.title}
         </h4>
       </div>
+      <br />
       <div className="grid grid-cols-3 gap-8 ml-8">
         {props.items.map((item, index) => (
           <SkillIcon key={item.id} index={index} {...item} />
@@ -83,11 +84,11 @@ const ExperienceCard = (props) => {
               index === props.positions.length - 1 ? "mb-0" : "mb-4"
             } ml-4`}
           >
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="text-lg font-semibold text-dark_primary dark:text-white">
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-white"></div>
+            <h3 className="text-lg font-semibold text-dark_primary">
               {position.title}
             </h3>
-            <time className="mb-1 text-sm font-normal leading-none text-[#caddf7] dark:text-gray-500">
+            <time className="mb-1 text-sm font-normal leading-none text-[#caddf7]">
               {position.duration}
             </time>
             {position.content.map((info, index) => (
@@ -104,12 +105,12 @@ const ExperienceCard = (props) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screenn pt-4">
+    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screenn py-4">
       <motion.h1
        whileInView={{ y: [-20, 0], opacity: [0, 1] }}
        transition={{ duration: 1, type: 'spring', stiffness:"120"}}
        className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-16 px-5 ss:leading-[80px] leading-[80px] text-white">
-        Skills
+        Skills & Experience
       </motion.h1>
       <div
        className={"flex md:flex-row flex-col sm:py-10 py-6" }
@@ -124,7 +125,7 @@ const Skills = () => {
         </motion.div>
 
         {/* Experience */}
-        <motion.div className="flex flex-1 items-center justify-start flex-col">
+        <motion.div className="flex flex-1 items-center justify-start flex-col my-4 sm:my-2">
           {experiences.map((exp, index) => (
             <ExperienceCard index={index} {...exp} />
           ))}

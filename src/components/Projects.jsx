@@ -19,7 +19,7 @@ const Project = (props) => {
         />
 
         <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-xl font-semibold font-poppins text-gray-700 capitalize md:text-2x">
+          <h1 className="text-xl font-semibold font-poppins text-gray-200 capitalize md:text-2x">
             {props.title}
           </h1>
           <p className="font-poppins font-normal text-dimWhite mt-3">

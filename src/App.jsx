@@ -4,14 +4,13 @@ import Navbar from "./Layouts/Navbar";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
-import Testimonials from "./components/Testimonials";
-import Hireme from "./components/Hireme";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 // Animation package
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Loading from "./components/Loading";
+import OpenSource from "./components/OpenSource";
 
 const App = () => {
 
@@ -53,9 +52,8 @@ const App = () => {
       <Skills />
       <Education />
       <Projects />
-      <Testimonials />
-      <Hireme />
-      <Contact />
+      <OpenSource/>
+      <Footer />
     </div>
   );
 };

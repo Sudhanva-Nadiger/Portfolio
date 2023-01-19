@@ -20,7 +20,7 @@ const Hero = () => {
 		<motion.section
 			initial={{ x: -100, opacity: 0.25 }}
 			animate={{ x: 0, opacity: 1.5 }}
-			transition={{ duration: 1, type: 'spring', stiffness:"120" }}
+			transition={{ duration: 1}}
 			id="home" className="overflow-hidden bg-primaryLinear md:bg-none">
 			<div className="min-h-screen relative flex lg:flex-row flex-col justify-center items-center">
 				<div

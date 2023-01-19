@@ -1,10 +1,12 @@
 // import images
 import Hero_person from "./assets/images/Hero/main_comp.json";
 import nitk from '../src/assets/images/Education/nitk.png'
+import openFoodFacts from './assets/images/OpenSrc/openFoodFacts.png'
+
+export const resumeLink = ""
+export const repoLink = ""
 
 import {
-  SiDjango,
-  SiSqlite,
   SiJavascript,
   SiBootstrap,
   SiReact,
@@ -14,17 +16,12 @@ import {
   SiPython,
   SiCplusplus,
   SiC,
-  SiRubyonrails,
   SiJquery,
   SiVisualstudiocode,
-  SiPostman,
   SiGit,
   SiMysql,
-  SiSolidity,
   SiNetlify,
-  SiChartdotjs,
   SiHtml5,
-  SiRuby,
   SiVite,
   SiCss3,
   SiMongodb,
@@ -38,41 +35,21 @@ import {
 
 import {
   AiFillGithub,
+  AiFillHtml5,
   AiFillInstagram,
   AiFillLinkedin,
   AiFillMail,
-  AiOutlineTwitter,
-  AiFillHtml5,
-  AiOutlineGoogle,
-  AiOutlineGitlab,
 } from "react-icons/ai";
 
-import services_logo1 from "./assets/images/Services/logo1.png";
-import services_logo2 from "./assets/images/Services/logo2.png";
-import services_logo3 from "./assets/images/Services/logo3.png";
 
 import bookmark from "./assets/images/Projects/bookmark.jfif";
 import bank from "./assets/images/projects/bank.jpg";
 import keep_notes from "./assets/images/projects/keepNotes.png";
 import movie_land from "./assets/images/projects/movieLand.jfif";
 import tindog from "./assets/images/projects/tindog.png";
+import videotube from "./assets/images/projects/video-tube.png";
+import TriNit from "./assets/images/TriNit.jfif"
 
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
-
-import Hireme_person from "./assets/images/Hireme/person.png";
-import Hireme_person2 from "./assets/images/Hireme/person2.png";
-
-// import icons from react-icons
-import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
-import { TbSmartHome } from "react-icons/tb";
-import { BiUser } from "react-icons/bi";
-import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
-import { MdOutlinePermContactCalendar } from "react-icons/md";
 
 export const content = {
   nav: [
@@ -89,8 +66,8 @@ export const content = {
       title: "Projects",
     },
     {
-      link: "#extra",
-      title: "Extra Curricular",
+      link: "#openSrc",
+      title: "Open Source",
     },
     {
       link: "#contact",
@@ -100,10 +77,9 @@ export const content = {
   hero: {
     title: `Hello,`,
     sub1: "there",
-    sub2 : "I am",
+    sub2: "I am",
     firstName: "SUDHANVA",
     LastName: "NADIGER",
-    // btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
       {
@@ -211,7 +187,7 @@ export const content = {
           icon: SiMysql,
           name: "MySQL",
         },
-       
+
         {
           id: "t-3",
           icon: SiVisualstudiocode,
@@ -245,87 +221,27 @@ export const content = {
       ],
     },
   ],
-  services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
-    service_content: [
-      {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
-      },
-      {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
-      },
-      {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
-      },
-    ],
-  },
-  
-  Testimonials: {
-    title: "Testimonials",
-    subtitle: "MY CLIENT REVIEWS",
-    testimonials_content: [
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
-    ],
-  },
-  Hireme: {
-    title: "Hire Me",
-    subtitle: "FOR YOUR PROJECTS",
-    image1: Hireme_person,
-    image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-    btnText: "Hire Me",
-  },
-  Contact: {
-    title: "Contect Me",
-    subtitle: "GET IN TOUCH",
-    social_media: [
-      {
-        text: "codeaprogram@gmail.com",
-        icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
-      },
-      {
-        text: "+91 1234 56778",
-        icon: MdCall,
-        link: "https://wa.me/1234567890",
-      },
-      {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
-      },
-    ],
-  },
+
+  experiences: [
+    {
+      organisation: "TRI NIT Hackathon",
+      logo: TriNit,
+      link: "https://github.com/TRI-NIT",
+      positions: [
+        {
+          title: "Web Developer",
+          duration: "Jan 2023 - Present",
+          content: [
+            {
+              text: "Developing website for hackathon conducted buy NITK, NITT and NITW",
+              link: "",
+            },
+          ],
+        },
+      ],
+    },
+  ],
+
   Footer: {
     text: "All © Copy Right Reserved 2022",
   },
@@ -394,7 +310,7 @@ export const projects = [
         icon: SiTailwindcss,
         name: "Tailwind CSS"
       },
-      
+
     ],
   },
   {
@@ -415,7 +331,7 @@ export const projects = [
         icon: SiCss3,
         name: "CSS"
       },
-      
+
     ],
   },
   {
@@ -465,57 +381,160 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   id: "project-6",
-  //   title: "GraphQL API",
-  //   github: "https://github.com/mittal-parth/GSDC-NITK-CRUD-API",
-  //   link: "",
-  //   image: graphql,
-  //   content:
-  //     "A Django based CRUD API using GraphQL to manage employees in an organization.",
-  //   stack: [
-  //     {
-  //       id: "icon-1",
-  //       icon: SiGraphql,
-  //       name: "GraphQL"
-  //     },
-  //     {
-  //       id: "icon-2",
-  //       icon: SiDjango,
-  //       name: "Django"
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: "project-7",
-  //   title: "To-Do App 2.0",
-  //   github: "https://github.com/mittal-parth/To-Do-App-2.0",
-  //   link: "",
-  //   image: todo,
-  //   content:
-  //     "A Progressive Web Application with Google OAuth, media and speech to text features.",
-  //   stack: [
-  //     {
-  //       id: "icon-1",
-  //       icon: SiDjango,
-  //       name: "Django"
-  //     },
+  {
+    id: "project-7",
+    title: "Video Tube",
+    github: "https://github.com/Sudhanva-Nadiger/My-App",
+    link: "https://video-tube-react.netlify.app/",
+    image: videotube,
+    content:
+      "A frontend web application for video links management. Provides the functionality like adding, editing, deleting, drag and drop, history of watchedd videos etc.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiRedux,
+        name: "Redux Toolkit"
+      },
+      {
+        id: "icon-3",
+        icon: SiMaterialui,
+        name: "Redux Toolkit"
+      },
+    ]
+  },
+  {
+    id: "project-8",
+    title: "Personal Portfolio",
+    github: "https://github.com/Sudhanva-Nadiger/My-App",
+    link: "https://video-tube-react.netlify.app/",
+    image: videotube,
+    content:
+      "A frontend web application for video links management. Provides the functionality like adding, editing, deleting, drag and drop, history of watchedd videos etc.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiRedux,
+        name: "Redux Toolkit"
+      },
+      {
+        id: "icon-3",
+        icon: SiMaterialui,
+        name: "Redux Toolkit"
+      },
+    ],
+  },
 
-  //     {
-  //       id: "icon-2",
-  //       icon: AiOutlineGoogle,
-  //       name: "Google OAuth"
-  //     },
-  //     {
-  //       id: "icon-3",
-  //       icon: AiFillHtml5,
-  //       name: "HTML"
-  //     },
-  //     {
-  //       id: "icon-4",
-  //       icon: DiCss3,
-  //       name: "CSS"
-  //     },
-  //   ],
-  // },
+]
+
+export const openSourceContributions = [
+  {
+    id: "os-1",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title:
+      'Make "Start Scanning" Button',
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3569",
+    number: "#3569",
+    date: "Jan 12 2023",
+    linesAdded: "34",
+    linesDeleted: "29",
+  },
+  {
+    id: "os-2",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "Pop dialog navigator properly",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3528",
+    number: "#3538",
+    date: "Jan 5 2023",
+    linesAdded: "86",
+    linesDeleted: "106",
+  },
+  {
+    id: "os-3",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "fab appearing in start scanning page",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3550",
+    number: "#3550",
+    date: "Jan 8 2023",
+    linesAdded: "1",
+    linesDeleted: "1",
+  },
+  {
+    id: "os-4",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: add troubleshooting section",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3587",
+    number: "#3587",
+    date: "Jan 18 2023",
+    linesAdded: "16",
+    linesDeleted: "1",
+  },
+  {
+    id: "os-5",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "String with only spaces is considered as name !",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3593",
+    number: "#3593",
+    date: "Jan 18 2023",
+    linesAdded: "3",
+    linesDeleted: "2",
+  },
 ];
+
+export const socialMedia = [
+  {
+    id: "social-media-1",
+    icon: AiFillLinkedin,
+    link: "https://www.linkedin.com/in/sudhanva-nadiger-b616a6212/",
+  },
+  {
+    id: "social-media-2",
+    icon: AiFillGithub,
+    link: "https://www.github.com/Sudhanva-Nadiger",
+  },
+  {
+    id: "social-media-3",
+    icon: AiFillMail,
+    link: "mailto:sudhanvanadiger12@gmail.com",
+  },
+  {
+    id: "social-media-4",
+    icon: AiFillInstagram,
+    link: "https://www.instagram.com/sudhanva_nadiger__",
+  },
+];
+
+export const aboutMe = {
+  name: "Sudhanva Nadiger",
+  tagLine: "Pre final year student at NITK | Executive Member @ ACM NITK | ",
+  intro: content.hero.hero_content.text
+}

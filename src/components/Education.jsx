@@ -55,14 +55,14 @@ const FeatureCard = ({
 
 const Education = () => {
   return (
-    <section id="education" className="bg-primaryLinear pt-4 min-h-screenn">
+    <section id="education" className="bg-primaryLinear pt-4">
       <h1 className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-16 px-5 ss:leading-[80px] leading-[80px]">
         Education
       </h1>
       <motion.div
         className="flex md:flex-row flex-col-reverse py-1 gap-2 sm:gap-20 px-2 justify-center items-center"
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 1, type: 'spring', stiffness:"120" }}
+        transition={{ duration: 1 }}
       >
         <div className="sm:w-[400px] sm:h-[400px] w-[300px] h-[300px] relative z-[5] flex md:flex-row flex-col-reverse py-0 sm:py-6 pointer-events-none">
           <Lottie options={defaultOptions} />

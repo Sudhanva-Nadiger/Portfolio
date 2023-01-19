@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import { socialMedia, aboutMe } from "../Content";
-import  profilePic  from "../assets/images/Sudhanva.jpeg";
 import { resumeLink, repoLink } from "../Content";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -50,9 +49,9 @@ const Footer = () => (
 
       <div className="md:ml-auto mt-10 md:mt-0">
         <img
-          src={profilePic}
+          src="https://assets.leetcode.com/users/avatars/avatar_1645015636.png"
           alt="Sudhanva Nadiger"
-          className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
+          className="w-[200px] h-[200px] border-2 border-dark_primary relative z-[5] rounded-full"
         />
       </div>
     </div>

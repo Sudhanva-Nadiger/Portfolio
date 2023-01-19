@@ -49,6 +49,7 @@ import movie_land from "./assets/images/projects/movieLand.jfif";
 import tindog from "./assets/images/projects/tindog.png";
 import videotube from "./assets/images/projects/video-tube.png";
 import TriNit from "./assets/images/TriNit.jfif"
+import portfolio from './assets/images/Projects/portfolio.jpg'
 
 
 export const content = {
@@ -410,11 +411,11 @@ export const projects = [
   {
     id: "project-8",
     title: "Personal Portfolio",
-    github: "https://github.com/Sudhanva-Nadiger/My-App",
-    link: "https://video-tube-react.netlify.app/",
-    image: videotube,
+    github: "https://github.com/Sudhanva-Nadiger/",
+    link: "",
+    image: portfolio,
     content:
-      "A frontend web application for video links management. Provides the functionality like adding, editing, deleting, drag and drop, history of watchedd videos etc.",
+      "Personal portfolio website with React and Tailwind CSS.",
     stack: [
       {
         id: "icon-1",
@@ -423,13 +424,13 @@ export const projects = [
       },
       {
         id: "icon-2",
-        icon: SiRedux,
-        name: "Redux Toolkit"
+        icon: SiTailwindcss,
+        name: "Tailwind CSS"
       },
       {
         id: "icon-3",
-        icon: SiMaterialui,
-        name: "Redux Toolkit"
+        icon: SiCss3,
+        name: "CSS"
       },
     ],
   },

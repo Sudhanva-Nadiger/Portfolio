@@ -2,6 +2,7 @@
 import Hero_person from "./assets/images/Hero/main_comp.json";
 import nitk from '../src/assets/images/Education/nitk.png'
 import openFoodFacts from './assets/images/OpenSrc/openFoodFacts.png'
+import flood from "./assets/images/OpenSrc/flood.png"
 
 export const resumeLink = ""
 export const repoLink = ""
@@ -508,6 +509,20 @@ export const openSourceContributions = [
     date: "Jan 18 2023",
     linesAdded: "3",
     linesDeleted: "2",
+  },
+  {
+    id: "os-6",
+    organisation: "CCExtractor",
+    logo: flood,
+    repo: "Flood_Mobile",
+    type: "pull-request",
+    status: "merged",
+    title: "fix: make checkbox clearly visible onclick",
+    link: "https://github.com/CCExtractor/Flood_Mobile/pull/160",
+    number: "#160",
+    date: "Jan 20 2023",
+    linesAdded: "133",
+    linesDeleted: "105",
   },
 ];
 

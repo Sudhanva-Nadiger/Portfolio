@@ -511,7 +511,7 @@ export const openSourceContributions = [
     linesDeleted: "2",
   },
   {
-    id: "os-5",
+    id: "os-6",
     organisation: "openfoodfacts",
     logo: openFoodFacts,
     repo: "smooth-app",
@@ -525,7 +525,7 @@ export const openSourceContributions = [
     linesDeleted: "1",
   },
   {
-    id: "os-6",
+    id: "os-7",
     organisation: "CCExtractor",
     logo: flood,
     repo: "Flood_Mobile",

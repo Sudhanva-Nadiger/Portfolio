@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.9.1",
     "aos": "^2.3.4",
     "framer-motion": "^8.0.2",
     "react": "^18.2.0",

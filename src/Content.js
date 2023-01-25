@@ -235,7 +235,7 @@ export const content = {
           duration: "Jan 2023 - Present",
           content: [
             {
-              text: "Developing website for hackathon conducted buy NITK, NITT and NITW",
+              text: "Contributed to Tri-Nit hackathon website.",
               link: "",
             },
           ],
@@ -509,6 +509,20 @@ export const openSourceContributions = [
     date: "Jan 18 2023",
     linesAdded: "3",
     linesDeleted: "2",
+  },
+  {
+    id: "os-5",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "Alternate the color between packaging components to avoid any potential confusion",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3619",
+    number: "#3619",
+    date: "Jan 23 2023",
+    linesAdded: "22",
+    linesDeleted: "1",
   },
   {
     id: "os-6",

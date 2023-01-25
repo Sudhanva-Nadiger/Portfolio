@@ -15,7 +15,7 @@ const Contribution = (props) => {
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[30px] h-[30px] rounded-full mt-2"
+          className="w-[30px] h-[30px] aspect-square rounded-full mt-2 bg-black"
         />
         <div className="flex flex-col ml-4">
           <a

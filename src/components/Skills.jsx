@@ -2,6 +2,7 @@
 import React from 'react'
 import { content } from '../Content'
 import { motion } from 'framer-motion'
+import { BsLink45Deg } from "react-icons/bs";
 
 const skillsList = content.skillsList
 const experiences = content.experiences
@@ -49,7 +50,7 @@ const Content = ({ text, link }) => {
           <a href={link} target="_blank">
             <BsLink45Deg
               size="1rem"
-              className="inline hover:text-teal-200"
+              className="inline hover:text-white"
             ></BsLink45Deg>
           </a>
         ) : (
@@ -109,7 +110,7 @@ const Skills = () => {
       <motion.h1
        whileInView={{ y: [-20, 0], opacity: [0, 1] }}
        transition={{ duration: 1, type: 'spring', stiffness:"120"}}
-       className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-16 px-5 ss:leading-[80px] leading-[80px] text-white">
+       className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-10 px-2 ss:leading-[80px] leading-[80px] text-white">
         Skills & Experience
       </motion.h1>
       <div
@@ -118,14 +119,14 @@ const Skills = () => {
       // transition={{ duration: 0.5 }}
       >
         {/* Skills */}
-        <motion.div className={`ml-2 mb-6 flex-1 flex justify-start gap-3 items-start flex-col `}>
+        <motion.div className={`ml-4 mb-6 flex-1 flex justify-start gap-3 items-start flex-col `}>
           {skillsList.map((skill, index) => (
             <SkillCard index={index} {...skill} />
           ))}
         </motion.div>
 
         {/* Experience */}
-        <motion.div className="flex flex-1 items-center justify-start flex-col my-4 sm:my-2">
+        <motion.div className="flex flex-1 items-start justify-start flex-col my-4 sm:my-2">
           {experiences.map((exp, index) => (
             <ExperienceCard index={index} {...exp} />
           ))}

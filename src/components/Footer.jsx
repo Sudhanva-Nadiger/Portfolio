@@ -7,7 +7,7 @@ import { AiFillGithub } from "react-icons/ai";
 const Footer = () => (
   <footer id="contact" className=" bg-secondaryLinear sm:px-16 px-6">
     <div
-      className={`flex md:flex-row flex-col-reverse sm:py-16 py-6 xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
+      className={`flex md:flex-row flex-col-reverse py-6 xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
     >
       <div className={"flex-1 flex-col flex justify-center items-start"}>
         <h2 className="text-xl font-bold font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
@@ -25,7 +25,7 @@ const Footer = () => (
               target="_blank"
               key={social.id}
               index={index}
-              className="mr-5 text-[25px] hover:text-teal-200"
+              className="mr-5 text-[25px] hover:text-[#F5F9FD]"
             >
               {React.createElement(social.icon)}
             </a>

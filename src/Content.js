@@ -4,8 +4,8 @@ import nitk from '../src/assets/images/Education/nitk.png'
 import openFoodFacts from './assets/images/OpenSrc/openFoodFacts.png'
 import flood from "./assets/images/OpenSrc/flood.png"
 
-export const resumeLink = ""
-export const repoLink = ""
+export const resumeLink = "https://drive.google.com/file/d/1PK3-E3PpcOkn3GZBSbjhrTwzSmyu64IW/view?usp=sharing"
+export const repoLink = "https://github.com/Sudhanva-Nadiger"
 
 import {
   SiJavascript,
@@ -51,7 +51,7 @@ import tindog from "./assets/images/Projects/tindog.png";
 import videotube from "./assets/images/Projects/video-tube.png";
 import TriNit from "./assets/images/TriNit.jfif"
 import portfolio from './assets/images/Projects/portfolio.jpg'
-
+import acm from './assets/images/Projects/acm.png'
 
 export const content = {
   nav: [
@@ -232,10 +232,37 @@ export const content = {
       positions: [
         {
           title: "Web Developer",
-          duration: "Jan 2023 - Present",
+          duration: "Jan 2023",
           content: [
             {
               text: "Contributed to Tri-Nit hackathon website.",
+              link: "https://github.com/TRI-NIT",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      organisation: "ACM NITK",
+      logo: acm,
+      link: "https://github.com/TRI-NIT",
+      positions: [
+        {
+          title: "Project Mentee",
+          duration: "Jan-April 2022",
+          content: [
+            {
+              text: "Analysed various games like Ludo, Mafia, Snake and Ladder in Python.",
+              link: "",
+            },
+          ],
+        },
+        {
+          title: "Project Mentor",
+          duration: "Jan 2023",
+          content: [
+            {
+              text: "Mentoring juniors on a Online code editor project.",
               link: "",
             },
           ],
@@ -413,7 +440,7 @@ export const projects = [
     id: "project-8",
     title: "Personal Portfolio",
     github: "https://github.com/Sudhanva-Nadiger/",
-    link: "",
+    link: "https://sudhanva-nadiger.netlify.app/",
     image: portfolio,
     content:
       "Personal portfolio website with React and Tailwind CSS.",
@@ -526,6 +553,90 @@ export const openSourceContributions = [
   },
   {
     id: "os-7",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "Add undo option when product in list deleted!",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3648",
+    number: "#3648",
+    date: "Jan 30 2023",
+    linesAdded: "23",
+    linesDeleted: "4",
+  },
+  {
+    id: "os-8",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "hunger-games",
+    type: "pull-request",
+    status: "merged",
+    title: "No intuitive way to close a modal on mobile",
+    link: "https://github.com/openfoodfacts/hunger-games/pull/495",
+    number: "#495",
+    date: "Jan 31 2023",
+    linesAdded: "27",
+    linesDeleted: "2",
+  },
+  {
+    id: "os-9",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "Email sender application broken",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3649",
+    number: "#3649",
+    date: "Jan 29 2023",
+    linesAdded: "6",
+    linesDeleted: "0",
+  },
+  {
+    id: "os-10",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "Add copy to clipBoard button in send email manually when user has no email application",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3651",
+    number: "#3651",
+    date: "Feb 8 2023",
+    linesAdded: "63",
+    linesDeleted: "11",
+  },
+  {
+    id: "os-11",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "hunger-games",
+    type: "pull-request",
+    status: "merged",
+    title: "Capitalize countries",
+    link: "https://github.com/openfoodfacts/hunger-games/pull/522",
+    number: "#522",
+    date: "Feb 5 2023",
+    linesAdded: "35",
+    linesDeleted: "6",
+  },
+  {
+    id: "os-12",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "hunger-games",
+    type: "pull-request",
+    status: "merged",
+    title: "fix: selectAll in logo game",
+    link: "https://github.com/openfoodfacts/hunger-games/pull/530",
+    number: "#530",
+    date: "Feb 5 2023",
+    linesAdded: "6",
+    linesDeleted: "1",
+  },
+  {
+    id: "os-21",
     organisation: "CCExtractor",
     logo: flood,
     repo: "Flood_Mobile",
@@ -565,6 +676,6 @@ export const socialMedia = [
 
 export const aboutMe = {
   name: "Sudhanva Nadiger",
-  tagLine: "Pre final year student at NITK | Executive Member @ ACM NITK | ",
+  tagLine: "Pre final year student at NITK | Executive Member @ ACM NITK | Open Source Contributor @OpenFoodFacts, @CCExtractor",
   intro: content.hero.hero_content.text
 }

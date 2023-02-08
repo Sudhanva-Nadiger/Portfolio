@@ -22,7 +22,7 @@ const Hero = () => {
 			animate={{ x: 0, opacity: 1.5 }}
 			transition={{ duration: 1}}
 			id="home" className="overflow-hidden bg-primaryLinear md:bg-none">
-			<div className="min-h-screen relative flex lg:flex-row flex-col justify-center items-center">
+			<div className="min-h-screen relative flex laptop:flex-row flex-col justify-center items-center">
 				<div
 					data-aos="slide-right"
 					data-aos-delay="500"
@@ -31,7 +31,7 @@ const Hero = () => {
 				</div>
 
 				{/* first col */}
-				<div className="pb-1 pt-5 mt-10  w-auto flex flex-col">
+				<div className="pb-1 pt-5 mt-10 laptop:pl-10 w-auto flex flex-col">
 					<div className='flex flex-col justify-between items-center w-full p-1'>
 						<h2 className='flex-1 flex flex-col items-center font-Inria text-center font-semibold text-[52px] text-white leading-[75px]'>
 							{hero.title}
@@ -66,7 +66,7 @@ const Hero = () => {
 				</div>
 
 				{/* sec col */}
-				<div className="md:h-[37rem] pointer-events-none mt-3 md:w-[50%]">
+				<div className="md:h-[37rem] pointer-events-none mt-3">
 					< Lottie options={defaultOptions} />
 				</div>
 			</div>

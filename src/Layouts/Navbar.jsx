@@ -20,7 +20,7 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-poppins
-            font-normal
+            font-semibold
             cursor-pointer
             text-[16px]
             hover:text-[#5b86cd] sm:mr-6 text-dark_primary`}
@@ -36,7 +36,7 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain mr-4"
+          className="w-[28px] h-[28px] object-contain mr-4 cursor-pointer"
           // correct way to change state using the prev
           // version of the same state using a callback function
           onClick={() => setToggle((prev) => !prev)}
@@ -44,7 +44,7 @@ const Navbar = () => {
 
         <div
           className={`${toggle ? "flex" : "hidden"} p-6 bg-dark_primary
-        absolute top-20 right-0 mx-4 my-2
+        absolute top-20 right-0 mx-4 my-0
         min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">

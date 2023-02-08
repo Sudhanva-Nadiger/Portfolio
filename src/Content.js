@@ -44,11 +44,11 @@ import {
 
 
 import bookmark from "./assets/images/Projects/bookmark.jfif";
-import bank from "./assets/images/projects/bank.jpg";
-import keep_notes from "./assets/images/projects/keepNotes.png";
-import movie_land from "./assets/images/projects/movieLand.jfif";
-import tindog from "./assets/images/projects/tindog.png";
-import videotube from "./assets/images/projects/video-tube.png";
+import bank from "./assets/images/Projects/bank.jpg";
+import keep_notes from "./assets/images/Projects/keepNotes.png";
+import movie_land from "./assets/images/Projects/movieLand.jfif";
+import tindog from "./assets/images/Projects/tindog.png";
+import videotube from "./assets/images/Projects/video-tube.png";
 import TriNit from "./assets/images/TriNit.jfif"
 import portfolio from './assets/images/Projects/portfolio.jpg'
 

@@ -17,5 +17,5 @@
   - [React Lottie](https://www.npmjs.com/package/react-lottie)
  
  ## Additional info
- - Yes you can use this repo for your portfolio as temolate.
+ - Yes you can use this repo for your portfolio as template.
  - Any type of contributions are welcome.

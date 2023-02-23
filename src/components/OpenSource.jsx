@@ -32,9 +32,8 @@ const Contribution = (props) => {
       </div>
 
       <div
-        className={`flex flex-row ${
-          props.linesAdded ? "justify-around ml-2" : "ml-10"
-        } mt-4`}
+        className={`flex flex-row ${props.linesAdded ? "justify-around ml-2" : "ml-10"
+          } mt-4`}
       >
         <a
           className="font-poppins font-normal text-[12px] text-gray-400 inline"
@@ -97,10 +96,15 @@ const OpenSource = () => {
   };
 
   return (
-    <section id="openSrc" className="bg-primaryLinear mx:3 p-4">
-      <h1 className="flex-1 pl-2 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] ss:leading-[80px] leading-[80px]">
-        Open Source Contributions
-      </h1>
+    <section id="openSrc" className="bg-primaryLinear mx:3 sm:px-16 px-6 py-4">
+      <motion.div
+        whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+        transition={{ duration: 1, type: 'spring', stiffness:"120"}}
+      >
+        <h1 className="flex-1 pl-2 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] ss:leading-[80px] leading-[80px]">
+          Open Source Contributions
+        </h1>
+      </motion.div>
 
       <div className="py-5 mb-8 flex justify-center">
         {/* <div class="flex items-center justify-center">
@@ -119,7 +123,7 @@ const OpenSource = () => {
           </div>
         </div> */}
 
-        <div className="grid grid-cols-1 justify-center gap-8 mt-8 md:mt-16 tablet:grid-cols-2 laptop:grid-cols-3 sm:grid-cols-2">
+        <div className="grid grid-cols-1 justify-center gap-8 mt-4 md:mt-8 tablet:grid-cols-2 laptop:grid-cols-3 sm:grid-cols-2">
           {filterContribution.map((contribution, index) => (
             <Contribution
               key={contribution.id}

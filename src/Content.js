@@ -3,6 +3,7 @@ import Hero_person from "./assets/images/Hero/main_comp.json";
 import nitk from '../src/assets/images/Education/nitk.png'
 import openFoodFacts from './assets/images/OpenSrc/openFoodFacts.png'
 import flood from "./assets/images/OpenSrc/flood.png"
+import mattermost from './assets/images/OpenSrc/mattermost.jfif'
 
 export const resumeLink = "https://drive.google.com/file/d/1PK3-E3PpcOkn3GZBSbjhrTwzSmyu64IW/view?usp=sharing"
 export const repoLink = "https://github.com/Sudhanva-Nadiger"
@@ -52,6 +53,7 @@ import videotube from "./assets/images/Projects/video-tube.png";
 import TriNit from "./assets/images/TriNit.jfif"
 import portfolio from './assets/images/Projects/portfolio.jpg'
 import acm from './assets/images/Projects/acm.png'
+import expenseTracker from './assets/images/Projects/expense-tracker.png'
 
 export const content = {
   nav: [
@@ -262,8 +264,8 @@ export const content = {
           duration: "Jan 2023",
           content: [
             {
-              text: "Mentoring juniors on a Online code editor project.",
-              link: "",
+              text: "Mentoring team on a 'Online code editor' project.",
+              link: "https://github.com/Amruth-S05/Online-Code-Editor",
             },
           ],
         },
@@ -272,7 +274,7 @@ export const content = {
   ],
 
   Footer: {
-    text: "All © Copy Right Reserved 2022",
+    text: "All © Copy Right Reserved 2023",
   },
 };
 
@@ -462,6 +464,27 @@ export const projects = [
       },
     ],
   },
+  {
+    id: "project-9",
+    title: "Expense Tracker",
+    github: "https://github.com/Sudhanva-Nadiger/Personal_Expense_Tracker",
+    link: "",
+    image: expenseTracker,
+    content:
+      "An application developed using Flutter that helps to track the overall expenses made.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiFlutter,
+        name: "Flutter"
+      },
+      {
+        id: "icon-2",
+        icon: SiDart,
+        name: "Dart"
+      },
+    ],
+  },
 
 ]
 
@@ -628,6 +651,20 @@ export const openSourceContributions = [
     repo: "hunger-games",
     type: "pull-request",
     status: "merged",
+    title: "feat: add loading animation before question display",
+    link: "https://github.com/openfoodfacts/hunger-games/pull/498",
+    number: "#498",
+    date: "Jan 31 5 2023",
+    linesAdded: "14",
+    linesDeleted: "3",
+  },
+  {
+    id: "os-13",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "hunger-games",
+    type: "pull-request",
+    status: "merged",
     title: "fix: selectAll in logo game",
     link: "https://github.com/openfoodfacts/hunger-games/pull/530",
     number: "#530",
@@ -636,7 +673,105 @@ export const openSourceContributions = [
     linesDeleted: "1",
   },
   {
-    id: "os-21",
+    id: "os-14",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: format sign_up_errors to normal texts instead of HTML format",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3692",
+    number: "#3692",
+    date: "Feb 16 2023",
+    linesAdded: "33",
+    linesDeleted: "13",
+  },
+  {
+    id: "os-15",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: Improve user profile UI",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3693",
+    number: "#3693",
+    date: "Feb 16 2023",
+    linesAdded: "28",
+    linesDeleted: "29",
+  },
+  {
+    id: "os-16",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "refactor: move usermanagementProvider after if check!",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3698",
+    number: "#3698",
+    date: "Feb 16 2023",
+    linesAdded: "3",
+    linesDeleted: "2",
+  },
+  {
+    id: "os-17",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "hunger-games",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: add links related to open food facts in settings route.",
+    link: "https://github.com/openfoodfacts/hunger-games/pull/539",
+    number: "#539",
+    date: "Feb 14 2023",
+    linesAdded: "565",
+    linesDeleted: "90",
+  },
+  {
+    id: "os-18",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: add rate the app link and share the app link in the settings page!",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3704",
+    number: "#3704",
+    date: "Feb 21 2023",
+    linesAdded: "111",
+    linesDeleted: "0",
+  },
+  {
+    id: "os-19",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "fix: checkBox not showing right mark in dark theme",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3725",
+    number: "#3725",
+    date: "Feb 21 2023",
+    linesAdded: "2",
+    linesDeleted: "0",
+  },
+  {
+    id: "os-101",
+    organisation: "mattermost",
+    logo: mattermost,
+    repo: "mattermost-mobile",
+    type: "pull-request",
+    status: "merged",
+    title: "fix: reset password bug",
+    link: "https://github.com/mattermost/mattermost-mobile/pull/7135",
+    number: "#7135",
+    date: "Feb 16 2023",
+    linesAdded: "3",
+    linesDeleted: "4",
+  },
+  {
+    id: "os-201",
     organisation: "CCExtractor",
     logo: flood,
     repo: "Flood_Mobile",

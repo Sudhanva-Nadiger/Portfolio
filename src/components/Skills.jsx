@@ -106,11 +106,11 @@ const ExperienceCard = (props) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screenn py-4">
+    <section id="skills" className="sm:mb-0 bg-secondaryLinear sm:px-16 px-6 min-h-screen py-4">
       <motion.h1
        whileInView={{ y: [-20, 0], opacity: [0, 1] }}
        transition={{ duration: 1, type: 'spring', stiffness:"120"}}
-       className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-10 px-2 ss:leading-[80px] leading-[80px] text-white">
+       className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] ss:leading-[80px] leading-[80px] text-white">
         Skills & Experience
       </motion.h1>
       <div

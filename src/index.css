@@ -71,23 +71,23 @@
   h6,
   p,
   span {
-    @apply text-dark_primary;
+    @apply font-Poppins text-dark_primary;
   }
   h1 {
-    @apply  sm:text-6xl text-4xl font-extrabold;
+    @apply font-Poppins  sm:text-6xl text-4xl font-extrabold;
   }
 
   h2 {
-    @apply  sm:text-5xl text-3xl font-bold;
+    @apply font-Poppins  sm:text-5xl text-3xl font-bold;
   }
   h3 {
-    @apply font-Paprika text-5xl;
+    @apply font-Poppins text-5xl;
   }
   h4 {
-    @apply md:text-4xl text-3xl !leading-relaxed font-Paprika;
+    @apply font-Poppins md:text-4xl text-3xl !leading-relaxed;
   }
   h6 {
-    @apply font-Paprika font-bold text-[#253D57] leading-8;
+    @apply font-Poppins font-bold text-[#253D57] leading-8;
   }
 
   p {

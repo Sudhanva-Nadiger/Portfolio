@@ -9,7 +9,7 @@ const Project = (props) => {
     <motion.div
       className="proj feature-card hover:text-white px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent"
       whileInView={{ y: [-40, 0], opacity: [0, 1] }}
-      transition={{ duration: 1, type: 'spring', stiffness:"120" }}
+      transition={{ duration: 1, type: 'spring', stiffness: "120" }}
     >
       <div className="flex flex-col sm:-mx-4 sm:flex-row">
         <img
@@ -75,9 +75,14 @@ const Project = (props) => {
 const Projects = () => {
   return (
     <section id="projects" className="bg-secondaryLinear sm:px-16 px-6 py-4" >
-      <h1 className="flex-1 font-Poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
-        Projects
-      </h1>
+      <motion.div
+       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+       transition={{ duration: 1, type: 'spring', stiffness:"120"}}
+      >
+        <h1 className="flex-1 font-Poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
+          Projects
+        </h1>
+      </motion.div>
 
       <div className="container px-2 py-10 mx-auto">
         <div className="grid grid-cols-1 gap-8 mt-8 sm:mt-1 md:grid-cols-2">

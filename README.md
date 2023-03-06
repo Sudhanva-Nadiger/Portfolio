@@ -3,7 +3,7 @@
 
 ## Deploy link🤹‍♂️: [https://sudhanva-nadiger.netlify.app/](https://sudhanva-nadiger.netlify.app/)
 
-## Texh Stacks 🔨:
+## Tech Stacks 🔨:
 
 - Frameworks:
   - [ReactJs](https://reactjs.org/)

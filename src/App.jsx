@@ -11,6 +11,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Loading from "./components/Loading";
 import OpenSource from "./components/OpenSource";
+import Experience from "./components/Experience";
 
 const App = () => {
 
@@ -49,7 +50,10 @@ const App = () => {
           <Hero />
         </div>
       </div>
-      <Skills />
+      <div className="bg-secondaryLinear pb-5">
+        <Skills />
+        <Experience />
+      </div>
       <Education />
       <Projects />
       <OpenSource/>

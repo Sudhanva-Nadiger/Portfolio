@@ -9,11 +9,11 @@ const Loading = ({isLoading}) => {
             id="loading"
             className={`w-[100vw] h-[100vh] flex justify-center items-center`}
             initial={{ scale: 1.0, opacity: 0.25 }}
-            animate={{ scale: 2.0, opacity: 0.75 }}
+            animate={{ scale: 2.0, opacity: 1 }}
             transition={{
                 yoyo: Infinity,
                 duration: 1.0,
-                ease: "easeIn",
+                ease: "easeInOut",
             }}
           >
            <Logo isLoading={isLoading} />

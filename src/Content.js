@@ -32,7 +32,8 @@ import {
   SiDart,
   SiFlutter,
   SiExpress,
-  SiIntellijidea
+  SiIntellijidea,
+  SiReactivex
 } from "react-icons/si";
 
 import {
@@ -42,6 +43,8 @@ import {
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
+
+import * as ic from 'react-icons/all'
 
 
 import bookmark from "./assets/images/Projects/bookmark.jfif";
@@ -503,6 +506,7 @@ export const openSourceContributions = [
     date: "Jan 12 2023",
     linesAdded: "34",
     linesDeleted: "29",
+    technology: SiFlutter,
   },
   {
     id: "os-2",
@@ -517,6 +521,7 @@ export const openSourceContributions = [
     date: "Jan 5 2023",
     linesAdded: "86",
     linesDeleted: "106",
+    technology: SiFlutter,
   },
   {
     id: "os-3",
@@ -531,6 +536,7 @@ export const openSourceContributions = [
     date: "Jan 8 2023",
     linesAdded: "1",
     linesDeleted: "1",
+    technology: SiFlutter,
   },
   {
     id: "os-4",
@@ -545,6 +551,7 @@ export const openSourceContributions = [
     date: "Jan 18 2023",
     linesAdded: "16",
     linesDeleted: "1",
+    technology: SiFlutter,
   },
   {
     id: "os-5",
@@ -559,6 +566,7 @@ export const openSourceContributions = [
     date: "Jan 18 2023",
     linesAdded: "3",
     linesDeleted: "2",
+    technology: SiFlutter,
   },
   {
     id: "os-6",
@@ -573,6 +581,7 @@ export const openSourceContributions = [
     date: "Jan 23 2023",
     linesAdded: "22",
     linesDeleted: "1",
+    technology: SiFlutter,
   },
   {
     id: "os-7",
@@ -587,6 +596,7 @@ export const openSourceContributions = [
     date: "Jan 30 2023",
     linesAdded: "23",
     linesDeleted: "4",
+    technology: SiFlutter,
   },
   {
     id: "os-8",
@@ -601,6 +611,7 @@ export const openSourceContributions = [
     date: "Jan 31 2023",
     linesAdded: "27",
     linesDeleted: "2",
+    technology: SiReact,
   },
   {
     id: "os-9",
@@ -615,6 +626,7 @@ export const openSourceContributions = [
     date: "Jan 29 2023",
     linesAdded: "6",
     linesDeleted: "0",
+    technology: SiFlutter,
   },
   {
     id: "os-10",
@@ -629,6 +641,7 @@ export const openSourceContributions = [
     date: "Feb 8 2023",
     linesAdded: "63",
     linesDeleted: "11",
+    technology: SiFlutter,
   },
   {
     id: "os-11",
@@ -643,6 +656,7 @@ export const openSourceContributions = [
     date: "Feb 5 2023",
     linesAdded: "35",
     linesDeleted: "6",
+    technology: SiReact,
   },
   {
     id: "os-12",
@@ -657,6 +671,7 @@ export const openSourceContributions = [
     date: "Jan 31 5 2023",
     linesAdded: "14",
     linesDeleted: "3",
+    technology: SiReact,
   },
   {
     id: "os-13",
@@ -671,6 +686,7 @@ export const openSourceContributions = [
     date: "Feb 5 2023",
     linesAdded: "6",
     linesDeleted: "1",
+    technology: SiReact,
   },
   {
     id: "os-14",
@@ -685,6 +701,7 @@ export const openSourceContributions = [
     date: "Feb 16 2023",
     linesAdded: "33",
     linesDeleted: "13",
+    technology: SiFlutter,
   },
   {
     id: "os-15",
@@ -699,6 +716,7 @@ export const openSourceContributions = [
     date: "Feb 16 2023",
     linesAdded: "28",
     linesDeleted: "29",
+    technology: SiFlutter,
   },
   {
     id: "os-16",
@@ -707,12 +725,13 @@ export const openSourceContributions = [
     repo: "smooth-app",
     type: "pull-request",
     status: "merged",
-    title: "refactor: move usermanagementProvider after if check!",
+    title: "refactor: move usermanagement provider after if check!",
     link: "https://github.com/openfoodfacts/smooth-app/pull/3698",
     number: "#3698",
     date: "Feb 16 2023",
     linesAdded: "3",
     linesDeleted: "2",
+    technology: SiFlutter,
   },
   {
     id: "os-17",
@@ -727,6 +746,7 @@ export const openSourceContributions = [
     date: "Feb 14 2023",
     linesAdded: "565",
     linesDeleted: "90",
+    technology: SiReact,
   },
   {
     id: "os-18",
@@ -741,6 +761,7 @@ export const openSourceContributions = [
     date: "Feb 21 2023",
     linesAdded: "111",
     linesDeleted: "0",
+    technology: SiFlutter,
   },
   {
     id: "os-19",
@@ -755,6 +776,7 @@ export const openSourceContributions = [
     date: "Feb 21 2023",
     linesAdded: "2",
     linesDeleted: "0",
+    technology: SiFlutter,
   },
   {
     id: "os-101",
@@ -769,6 +791,7 @@ export const openSourceContributions = [
     date: "Feb 16 2023",
     linesAdded: "3",
     linesDeleted: "4",
+    technology: ic.TbBrandReactNative,
   },
   {
     id: "os-201",
@@ -783,6 +806,7 @@ export const openSourceContributions = [
     date: "Jan 20 2023",
     linesAdded: "133",
     linesDeleted: "105",
+    technology: SiFlutter,
   },
 ];
 
@@ -811,6 +835,6 @@ export const socialMedia = [
 
 export const aboutMe = {
   name: "Sudhanva Nadiger",
-  tagLine: "Pre final year student at NITK | Executive Member @ ACM NITK | Open Source Contributor @OpenFoodFacts, @CCExtractor",
+  tagLine: "Pre final year student at NITK | Executive Member @ ACM NITK | Open Source Contributor",
   intro: content.hero.hero_content.text
 }

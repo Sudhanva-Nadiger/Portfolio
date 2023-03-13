@@ -30,22 +30,19 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* only for mobile devices, created separately */}
+      {/* only for mobile devices*/}
       <div className="md:hidden flex flex-1 justify-end items-center">
-        {/* shows toggle icon based on its state */}
         <img
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain mr-4 cursor-pointer"
-          // correct way to change state using the prev
-          // version of the same state using a callback function
           onClick={() => setToggle((prev) => !prev)}
         />
 
         <div
-          className={`${toggle ? "flex" : "hidden"} p-6 bg-dark_primary
+          className={`${toggle ? "opacity-1" : "opacity-0 top-40"} p-4 bg-dark_primary
         absolute top-20 right-0 mx-4 my-0
-        min-w-[140px] rounded-xl sidebar`}
+        min-w-[140px] rounded-xl sidebar transition-all ease-out`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
             {navs.map((nav, index) => (
@@ -57,7 +54,7 @@ const Navbar = () => {
                 text-[16px]
                 text-center
                 ${index === navs.length - 1 ? "mb-0" : "mb-4"}
-                text-white`}
+                text-white w-full`}
                 onClick={()=>setToggle(!toggle)}
               >
                 <a href={`${nav.link}`}>{nav.title}</a>

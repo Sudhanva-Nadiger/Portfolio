@@ -17,6 +17,7 @@
     "react-icons": "^4.6.0",
     "react-lottie": "^1.2.3",
     "react-modal": "^3.16.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "swiper": "^8.4.4"
   },
   "devDependencies": {

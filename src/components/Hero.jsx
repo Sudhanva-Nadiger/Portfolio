@@ -1,9 +1,14 @@
-// import content
 import { motion } from 'framer-motion'
 import Lottie from "react-lottie";
-import { content } from "../Content";
+
+import { content, socialMedia } from "../Content";
+import Button from './Button';
+import { BsArrowBarUp } from 'react-icons/all'
+
+
 const Hero = () => {
 	const { hero } = content;
+	const { link: linkedInLink } = socialMedia[0]
 
 	const defaultOptions = {
 		loop: true,
@@ -14,15 +19,13 @@ const Hero = () => {
 		}
 	};
 
-
-
 	return (
 		<motion.section
 			initial={{ x: -100, opacity: 0.25 }}
 			animate={{ x: 0, opacity: 1.5 }}
-			transition={{ duration: 1}}
+			transition={{ duration: 1 }}
 			id="home" className="overflow-hidden bg-primaryLinear md:bg-none">
-			<div className="min-h-screen relative flex laptop:flex-row flex-col justify-center items-center">
+			<div className="relative flex laptop:flex-row flex-col justify-center items-center">
 				<div
 					data-aos="slide-right"
 					data-aos-delay="500"
@@ -55,7 +58,7 @@ const Hero = () => {
 						{hero.hero_content.map((content, i) => (
 							<motion.div
 								whileInView={{ y: [20, 0], opacity: [0, 1] }}
-								transition={{ duration: 1, type: 'spring', stiffness:"120" }}
+								transition={{ duration: 1, type: 'spring', stiffness: "120" }}
 								key={i}
 								className={`flex items-center w-auto xs:w-80 gap-1 ${i === 1 && " flex-row-reverse text-right"}  `}>
 								<h3>{content.count}</h3>
@@ -63,6 +66,15 @@ const Hero = () => {
 							</motion.div>
 						))}
 					</div>
+
+					<motion.div
+						whileInView={{ y: [20, 0], opacity: [0, 1] }}
+						transition={{ duration: 1, type: 'spring', stiffness: "120" }}
+					>
+						<a href={linkedInLink} target="_blank">
+							<Button styles={'w-full bg-letsConnect font-bold mt-3'} text={'Lets connect'} />
+						</a>
+					</motion.div>
 				</div>
 
 				{/* sec col */}

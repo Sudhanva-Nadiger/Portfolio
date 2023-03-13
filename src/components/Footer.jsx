@@ -7,14 +7,14 @@ import { AiFillGithub } from "react-icons/ai";
 const Footer = () => (
   <footer id="contact" className=" bg-secondaryLinear sm:px-16 px-6">
     <div
-      className={`flex md:flex-row flex-col-reverse py-6 xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
+      className={`flex md:flex-row flex-col-reverse py-6 xl:max-w-[1280px] w-full mx-auto gap-y-4 items-center justify-center`}
     >
-      <div className={"flex-1 flex-col flex justify-center items-start"}>
+      <div className={"md:flex-1 flex-col flex justify-center items-center md:items-start"}>
         <h2 className="text-xl font-bold font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
           {aboutMe.name}
         </h2>
         <p
-          className={`font-poppins font-normal text-dimWhite text-[16px] leading-[30.8px] max-w-[470px] mt-5`}
+          className={`font-poppins font-normal text-center md:text-left text-dimWhite text-[16px] leading-[30.8px] max-w-[470px] mt-5`}
         >
         {aboutMe.tagLine}
         </p>
@@ -33,7 +33,6 @@ const Footer = () => (
         </div>
 
         <div className="grid grid-cols-2">
-          {/* styles is a prop */}
           <a href={resumeLink} target="_blank">
             <Button styles="mt-10 mr-3" text="Resume" icon="AiFillGithub" />
           </a>
@@ -47,7 +46,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="md:ml-auto mt-10 md:mt-0">
+      <div className="mt-10 md:mt-0">
         <img
           src="https://assets.leetcode.com/users/avatars/avatar_1645015636.png"
           alt="Sudhanva Nadiger"

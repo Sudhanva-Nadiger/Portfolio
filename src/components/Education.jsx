@@ -14,16 +14,9 @@ const defaultOptions = {
   },
 };
 
-const FeatureCard = ({
-  icon,
-  title,
-  degree,
-  duration,
-  content1,
-  content2,
-  index,
-}) => (
-  <div
+const FeatureCard = (props) => {
+  const { icon, title, degree, duration, content1, content2, index } = props
+  return <div
     className={`flex sm:flex-row flex-col p-2 rounded-[20px]
 	${index === educationList.length - 1 ? "mb-0" : "mb-6"} feature-card`}
   >
@@ -51,14 +44,16 @@ const FeatureCard = ({
       </p>
     </div>
   </div>
-);
+};
 
 const Education = () => {
   return (
     <section id="education" className="bg-primaryLinear pt-4">
-      <h1 className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-16 px-5 ss:leading-[80px] leading-[80px]">
+      <motion.h1
+        whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+        transition={{ duration: 1, type: 'spring', stiffness: "120" }} className="flex-1 font-Poppins font-semibold ss:text-[55px] sm:text-[45px] sm:px-16 px-5 ss:leading-[80px] leading-[80px]">
         Education
-      </h1>
+      </motion.h1>
       <motion.div
         className="flex md:flex-row flex-col-reverse py-1 gap-2 sm:gap-20 px-2 justify-center items-center"
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}

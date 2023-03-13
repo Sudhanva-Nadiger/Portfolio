@@ -263,6 +263,16 @@ export const content = {
           ],
         },
         {
+          title: "DSA mentor",
+          duration: "May 2022",
+          content: [
+            {
+              text: "Mentored 30+ students in summer mentorship program on topic data structures and algorithms.",
+              link: "",
+            },
+          ],
+        },
+        {
           title: "Project Mentor",
           duration: "Jan 2023",
           content: [

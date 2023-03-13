@@ -29,7 +29,7 @@ module.exports = {
         'xs': '315px',
         'tablet': '756px',
         'laptop': '870px',
-        // 'desktop': '1280px',
+        'custom-MediaQuery1': '795px',
       },
 
     },

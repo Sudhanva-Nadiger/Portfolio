@@ -432,7 +432,7 @@ export const projects = [
     link: "https://video-tube-react.netlify.app/",
     image: videotube,
     content:
-      "A frontend web application for video links management. Provides the functionality like adding, editing, deleting, drag and drop, history of watchedd videos etc.",
+      "A frontend web application for video links management. Provides the functionality like adding, editing, deleting, drag and drop, history of watched videos etc.",
     stack: [
       {
         id: "icon-1",

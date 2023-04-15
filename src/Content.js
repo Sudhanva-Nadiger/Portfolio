@@ -57,7 +57,7 @@ import TriNit from "./assets/images/TriNit.jfif";
 import portfolio from './assets/images/Projects/portfolio.jpg';
 import acm from './assets/images/Projects/acm.png';
 import expenseTracker from './assets/images/Projects/expense-tracker.png';
-import appFlowy from './assets/images/OpenSrc/appFlowy.png'
+import appFlowy from './assets/images/OpenSrc/appflowy.png'
 
 export const content = {
   navs: [

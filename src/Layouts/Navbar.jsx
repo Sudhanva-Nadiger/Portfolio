@@ -6,8 +6,7 @@ import Logo from "../components/Logo";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const { nav } = content
-  const navs = nav;
+  const { navs } = content
 
   return (
     <nav className="w-full z-10 flex justify-between items-center absolute left-0 top-0 bg-transparent">
@@ -18,14 +17,14 @@ const Navbar = () => {
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
         {navs.map((nav, index) => (
           <li
-            key={nav.id}
+            key={nav.link}
             className={`font-poppins
             font-semibold
             cursor-pointer
             text-[16px]
             hover:text-[#5b86cd] sm:mr-6 text-dark_primary`}
           >
-            <a href={`${nav.link}`}>{nav.title}</a>
+            <a key={nav.link+index} href={`${nav.link}`}>{nav.title}</a>
           </li>
         ))}
       </ul>
@@ -40,14 +39,14 @@ const Navbar = () => {
         />
 
         <div
-          className={`${toggle ? "opacity-1" : "opacity-0 top-40"} p-4 bg-dark_primary
+          className={`${toggle ? "opacity-1" : "opacity-0"} p-4 bg-dark_primary
         absolute top-20 right-0 mx-4 my-0
-        min-w-[140px] rounded-xl sidebar transition-all ease-out`}
+        min-w-[140px] rounded-xl sidebar duration-800 transition-all ease-out`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
             {navs.map((nav, index) => (
               <li
-                key={nav.id}
+                key={`${nav.link} mobile`}
                 className={`font-poppins
                 font-normal
                 cursor-pointer
@@ -57,7 +56,7 @@ const Navbar = () => {
                 text-white w-full`}
                 onClick={()=>setToggle(!toggle)}
               >
-                <a href={`${nav.link}`}>{nav.title}</a>
+                <a key={`${nav.link} ${index} mobile`} href={`${nav.link}`}>{nav.title}</a>
               </li>
             ))}
           </ul>

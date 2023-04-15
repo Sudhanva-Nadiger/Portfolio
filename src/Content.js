@@ -59,7 +59,7 @@ import acm from './assets/images/Projects/acm.png'
 import expenseTracker from './assets/images/Projects/expense-tracker.png'
 
 export const content = {
-  nav: [
+  navs: [
     {
       link: "#skills",
       title: "Skills & Experience",

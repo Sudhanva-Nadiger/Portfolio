@@ -7,7 +7,6 @@ import { SkillIcon } from "./Skills";
 
 const Contribution = (props) => {
   const { logo, organisation, link, title, repo, linesAdded, linesDeleted, type, status, number, technology } = props
-  console.log(technology)
   return (
     <motion.div
       className="flex flex-col bg-dark_primary justify-evenly max-w-[320px] p-6 rounded-[20px] my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent"
@@ -89,9 +88,6 @@ const OpenSource = () => {
       <div className="py-5 mb-8 flex justify-center">
         <div className="grid grid-cols-1 justify-center gap-8 mt-4 md:mt-8 tablet:grid-cols-2 laptop:grid-cols-3 sm:grid-cols-2">
           {openSourceContributions.map((contribution, index) => {
-            if(index === 0){
-              console.log(contribution)
-            }
             return <Contribution
               key={contribution.id}
               index={index}

@@ -59,6 +59,7 @@ const ExperienceCard = ({ experience }) => {
             <ol className='relative ml-5 mt-5 list-none space-y-2 border-l border-gray-200'>
                 {positions.map((position, index) => {
                     return <li
+                    key={`card-${index}`}
                         className={`${index === positions.length - 1 ? "mb-0" : "mb-4"
                             } ml-4`}
                     >
@@ -70,7 +71,7 @@ const ExperienceCard = ({ experience }) => {
                             {position.duration}
                         </time>
                         {position.content.map((info, index) => (
-                            <Content index={index} {...info} />
+                            <Content key={`content-${index}`} index={index} {...info} />
                         ))}
                         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></p>
                     </li>

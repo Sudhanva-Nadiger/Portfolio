@@ -18,12 +18,13 @@ export const SkillIcon = ({ icon, name, styles }) => {
 };
 
 const SkillCard = (props) => {
-  const { title, items } = props
+  const { title, items, index } = props
   return (
     <motion.div
       whileInView={{ x: [20, 0], opacity: [0, 1] }}
       transition={{ duration: 1, type: 'spring', stiffness:"120" }}
       className="mt-4 border-l border-gray-200 dark:border-gray-700 mx-0 sm:mx-4"
+      key={index}
     > 
       <div className="relative w-3 h-3 bg-bg_light_primary rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-white"></div>
       <div className="flex flex-row items-center sm:mb-6 mb-0 ml-6">
@@ -34,7 +35,7 @@ const SkillCard = (props) => {
       <br />
       <div className="grid grid-cols-3 gap-8 ml-8">
         {items.map((item, index) => (
-          <SkillIcon key={item.id} index={index} {...item} styles={'text-[30px] text-white'} />
+          <SkillIcon key={item.id + index}  index={index} {...item} styles={'text-[30px] text-white'} />
         ))}
       </div>
     </motion.div>
@@ -57,7 +58,7 @@ const Skills = () => {
         {/* Skills */}
         <motion.div className={`ml-4 mb-6 flex-1 flex justify-start gap-3 items-start flex-col custom-MediaQuery1:flex-row`}>
           {skillsList.map((skill, index) => (
-            <SkillCard index={index} {...skill} />
+            <SkillCard key={index} index={index} {...skill} />
           ))}
         </motion.div>
       </div>

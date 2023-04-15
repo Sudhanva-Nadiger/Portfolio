@@ -53,10 +53,11 @@ import keep_notes from "./assets/images/Projects/keepNotes.png";
 import movie_land from "./assets/images/Projects/movieLand.jfif";
 import tindog from "./assets/images/Projects/tindog.png";
 import videotube from "./assets/images/Projects/video-tube.png";
-import TriNit from "./assets/images/TriNit.jfif"
-import portfolio from './assets/images/Projects/portfolio.jpg'
-import acm from './assets/images/Projects/acm.png'
-import expenseTracker from './assets/images/Projects/expense-tracker.png'
+import TriNit from "./assets/images/TriNit.jfif";
+import portfolio from './assets/images/Projects/portfolio.jpg';
+import acm from './assets/images/Projects/acm.png';
+import expenseTracker from './assets/images/Projects/expense-tracker.png';
+import appFlowy from './assets/images/OpenSrc/appFlowy.png'
 
 export const content = {
   navs: [
@@ -789,6 +790,51 @@ export const openSourceContributions = [
     technology: SiFlutter,
   },
   {
+    id: "os-20",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: make nutrient search accentuation insensitive",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3792",
+    number: "#3792",
+    date: "Mar 21 2023",
+    linesAdded: "7",
+    linesDeleted: "3",
+    technology: SiFlutter,
+  },
+  {
+    id: "os-21",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "fix: remove validation check for basic info fields",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3794",
+    number: "#3794",
+    date: "Apr 8 2023",
+    linesAdded: "12",
+    linesDeleted: "28",
+    technology: SiFlutter,
+  },
+  {
+    id: "os-22",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "smooth-app",
+    type: "pull-request",
+    status: "merged",
+    title: "fix: visual inconsistency in app_settings",
+    link: "https://github.com/openfoodfacts/smooth-app/pull/3818",
+    number: "#3818",
+    date: "Apr 8 2023",
+    linesAdded: "77",
+    linesDeleted: "49",
+    technology: SiFlutter,
+  },
+  {
     id: "os-101",
     organisation: "mattermost",
     logo: mattermost,
@@ -816,6 +862,21 @@ export const openSourceContributions = [
     date: "Jan 20 2023",
     linesAdded: "133",
     linesDeleted: "105",
+    technology: SiFlutter,
+  },
+  {
+    id: "os-301",
+    organisation: "AppFlowy-IO",
+    logo: appFlowy,
+    repo: "AppFlowy",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: add icon to dropdown button in language view",
+    link: "https://github.com/AppFlowy-IO/AppFlowy/pull/2031",
+    number: "#2031",
+    date: "Mar 20 2023",
+    linesAdded: "24",
+    linesDeleted: "23",
     technology: SiFlutter,
   },
 ];

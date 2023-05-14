@@ -14,8 +14,11 @@ const Hero = () => {
 		loop: true,
 		autoplay: true,
 		animationData: hero.image,
+		progressiveLoad: true,
+		HorizontalOptions: "FillAndExpand",
+		VerticalOptions: "FillAndExpand",
 		rendererSettings: {
-			preserveAspectRatio: "xMidYMid slice"
+			preserveAspectRatio: "xMaxYmax meet"
 		}
 	};
 
@@ -25,7 +28,7 @@ const Hero = () => {
 			animate={{ x: 0, opacity: 1.5 }}
 			transition={{ duration: 1 }}
 			id="home" className="overflow-hidden bg-primaryLinear md:bg-none w-full">
-			<div className="relative flex laptop:flex-row flex-col justify-center items-center">
+			<div className="relative flex laptop:flex-row flex-col justify-around items-center">
 				<div
 					data-aos="slide-right"
 					data-aos-delay="500"

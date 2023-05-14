@@ -43,15 +43,11 @@ const App = () => {
     <Suspense fallback={<Loading />}>
       <div className="overflow-hidden">
         <div className={`sm:px-16 px-6 flex justify-center items-center`}>
-          <div className={`xl:max-w-[1280px] w-full`}>
             <Navbar />
-          </div>
         </div>
 
-        <div className={`flex justify-center items-start`}>
-          <div className={`xl:max-w-[1280px] w-full`}>
-            <Hero />
-          </div>
+        <div className={`flex justify-center items-start w-full`}>
+          <Hero />
         </div>
         <div className="bg-secondaryLinear pb-5">
           <Skills />

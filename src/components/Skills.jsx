@@ -56,7 +56,7 @@ const Skills = () => {
        className={"flex md:flex-row flex-col sm:py-10 py-6" }
       >
         {/* Skills */}
-        <motion.div className={`ml-4 mb-6 flex-1 flex justify-start gap-3 items-start flex-col custom-MediaQuery1:flex-row`}>
+        <motion.div className={`ml-4 mb-6 flex-1 flex gap-3 items-start justify-between flex-col custom-MediaQuery1:flex-row`}>
           {skillsList.map((skill, index) => (
             <SkillCard key={index} index={index} {...skill} />
           ))}

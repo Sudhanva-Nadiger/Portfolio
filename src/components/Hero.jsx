@@ -24,7 +24,7 @@ const Hero = () => {
 			initial={{ x: -100, opacity: 0.25 }}
 			animate={{ x: 0, opacity: 1.5 }}
 			transition={{ duration: 1 }}
-			id="home" className="overflow-hidden bg-primaryLinear md:bg-none">
+			id="home" className="overflow-hidden bg-primaryLinear md:bg-none w-full">
 			<div className="relative flex laptop:flex-row flex-col justify-center items-center">
 				<div
 					data-aos="slide-right"
@@ -79,7 +79,7 @@ const Hero = () => {
 
 				{/* sec col */}
 				<div className="md:h-[37rem] pointer-events-none mt-3">
-					< Lottie options={defaultOptions} />
+					<Lottie options={defaultOptions} />
 				</div>
 			</div>
 		</motion.section>

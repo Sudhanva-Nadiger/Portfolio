@@ -2,7 +2,6 @@
 import React from 'react'
 import { content } from '../Content'
 import { motion } from 'framer-motion'
-import Experience from './Experience';
 
 const skillsList = content.skillsList
 

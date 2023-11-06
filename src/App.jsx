@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import Hero from "./components/Hero";
 import Navbar from "./Layouts/Navbar";
 import Skills from "./components/Skills";
@@ -13,16 +13,6 @@ import Experience from "./components/Experience";
 
 const App = () => {
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const interval = setTimeout(() => { setIsLoading(false) }, 1600);
-
-    return () => {
-      clearTimeout(interval);
-    }
-  }, [])
-
   useEffect(() => {
     Aos.init({
       duration: 1800,
@@ -30,14 +20,6 @@ const App = () => {
       disable: "mobile",
     });
   }, []);
-
-  if (isLoading) {
-    return (
-      <div className="bg-primary w-full overflow-hidden bg-secondaryLinear">
-        <Loading isLoading={isLoading} />
-      </div>
-    )
-  }
 
   return (
     <Suspense fallback={<Loading />}>

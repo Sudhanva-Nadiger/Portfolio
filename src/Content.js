@@ -92,7 +92,7 @@ export const content = {
     hero_content: [
       {
         count: "",
-        text: "Student developer based in India. Web development and App development enthusiast.",
+        text: "Student developer based in India. Aspiring Software Development Engineer.",
       },
     ],
   },
@@ -1046,6 +1046,6 @@ export const socialMedia = [
 
 export const aboutMe = {
   name: "Sudhanva Nadiger",
-  tagLine: "Pre final year student at NITK | Executive Member @ ACM NITK | Open Source Contributor",
+  tagLine: "Final year student at NITK | Executive Member @ ACM NITK | Open Source Contributor",
   intro: content.hero.hero_content.text
 }

@@ -4,6 +4,9 @@ import nitk from '../src/assets/images/Education/nitk.png'
 import openFoodFacts from './assets/images/OpenSrc/openFoodFacts.png'
 import flood from "./assets/images/OpenSrc/flood.png"
 import mattermost from './assets/images/OpenSrc/mattermost.jfif'
+import bloodBank from './assets/images/Projects/bloodbank.webp'
+import npm from './assets/images/Projects/npm.jpg'
+import gocli from './assets/images/Projects/gocli.jpg'
 
 export const resumeLink = "https://drive.google.com/file/d/1PK3-E3PpcOkn3GZBSbjhrTwzSmyu64IW/view?usp=sharing"
 export const repoLink = "https://github.com/Sudhanva-Nadiger"
@@ -33,7 +36,7 @@ import {
   SiFlutter,
   SiExpress,
   SiIntellijidea,
-  SiReactivex
+  SiNodedotjs
 } from "react-icons/si";
 
 import {
@@ -306,6 +309,68 @@ export const educationList = [
 
 export const projects = [
   {
+    id: "project-100",
+    title: "Hemo Tracker",
+    github: "https://github.com/Sudhanva-Nadiger/blood-bank-management",
+    link: "https://sbn-bloodbank.onrender.com/",
+    image: bloodBank,
+    content:
+      "A comprehensive full stack web application for managing blood donatoins using the MERN stack.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiMongodb,
+        name: "MongoDB"
+      },
+      {
+        id: "icon-2",
+        icon: SiExpress,
+        name: "Express"
+      },
+      {
+        id: "icon-3",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-4",
+        icon: SiNodedotjs,
+        name: "Node.js"
+      },
+    ],
+  },
+  {
+    id: "project-101",
+    title: "React-Leetcode",
+    github: "https://github.com/Sudhanva-Nadiger/react-leetcode",
+    link: "https://react-leetcode-exampple.vercel.app/",
+    image: npm,
+    content:
+      "Collection of components for showcasing your leetcode profile in your portfolio ✨.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTailwindcss,
+        name: "Tailwind CSS"
+      },
+      {
+        id: "icon-3",
+        icon: SiVite,
+        name: "Vite"
+      },
+      {
+        id: "icon-4",
+        icon: ic.SiNpm,
+        name: "NPM"
+      },
+    ],
+  },
+  {
     id: "project-1",
     title: "Bookmark App",
     github: "https://github.com/Sudhanva-Nadiger/Book-Mark-App",
@@ -407,22 +472,21 @@ export const projects = [
   },
   {
     id: "project-5",
-    title: "Tin Dog",
-    github: "https://github.com/Sudhanva-Nadiger/Tin-Dog-Website",
-    link: "https://sudhanva-nadiger.github.io/Tin-Dog-Website/TinDog/",
-    image: tindog,
+    title: "Cli Task Manager",
+    github: "https://github.com/Sudhanva-Nadiger/go-cli-task-manager",
+    image: gocli,
     content:
-      "A home page website which provides details of the application to the end user like the desscription of the website, from where we can download the application, a section that displays the feedback from the clients and different plans and subscriptions.",
+      "A simple CLI task manager developed using Go.",
     stack: [
       {
         id: "icon-1",
-        icon: SiHtml5,
-        name: "HTML"
+        icon: ic.SiGo,
+        name: "Go"
       },
       {
         id: "icon-3",
-        icon: SiCss3,
-        name: "CSS"
+        icon: ic.DiDatabase,
+        name: "BoltDB"
       },
     ],
   },
@@ -878,6 +942,21 @@ export const openSourceContributions = [
     linesAdded: "354",
     linesDeleted: "39",
     technology: SiReact,
+  },
+  {
+    id: "os-26",
+    organisation: "openfoodfacts",
+    logo: openFoodFacts,
+    repo: "open-prices",
+    type: "pull-request",
+    status: "merged",
+    title: "feat: add endpoint to update price ",
+    link: "https://github.com/openfoodfacts/open-prices/pull/202",
+    number: "#202",
+    date: "Feb 23 2024",
+    linesAdded: "107",
+    linesDeleted: "0",
+    technology: SiPython,
   },
   {
     id: "os-101",

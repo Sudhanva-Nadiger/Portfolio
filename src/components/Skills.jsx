@@ -1,9 +1,7 @@
 
 import React from 'react'
-import { content } from '../Content'
+import { SKILLS_LIST } from '../constants'
 import { motion } from 'framer-motion'
-
-const skillsList = content.skillsList
 
 export const SkillIcon = ({ icon, name, styles }) => {
   return (
@@ -56,7 +54,7 @@ const Skills = () => {
       >
         {/* Skills */}
         <motion.div className={`ml-4 mb-6 flex-1 flex gap-3 items-start justify-between flex-col custom-MediaQuery1:flex-row`}>
-          {skillsList.map((skill, index) => (
+          {SKILLS_LIST.map((skill, index) => (
             <SkillCard key={index} index={index} {...skill} />
           ))}
         </motion.div>

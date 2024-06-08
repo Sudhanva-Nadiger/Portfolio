@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../Content";
+import { PROJECTS } from "../constants";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -86,7 +86,7 @@ const Projects = () => {
 
       <div className="container px-2 py-10 mx-auto">
         <div className="grid grid-cols-1 gap-8 mt-8 sm:mt-1 md:grid-cols-2">
-          {projects.map((project, index) => (
+          {PROJECTS.map((project, index) => (
             <Project key={project.id} index={index} {...project} />
           ))}
         </div>

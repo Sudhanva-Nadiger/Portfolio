@@ -1,14 +1,13 @@
 import { motion } from 'framer-motion'
 import Lottie from "react-lottie";
 
-import { content, socialMedia } from "../Content";
+import { CONTENT, SOCIAL_MEDIA } from "../constants";
 import Button from './Button';
-import { BsArrowBarUp } from 'react-icons/all'
 
 
 const Hero = () => {
-	const { hero } = content;
-	const { link: linkedInLink } = socialMedia[0]
+	const { hero } = CONTENT;
+	const { link: linkedInLink } = SOCIAL_MEDIA[0]
 
 	const defaultOptions = {
 		loop: true,

@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { socialMedia, aboutMe } from "../Content";
-import { resumeLink, repoLink } from "../Content";
+import { SOCIAL_MEDIA,REPO_LINK, RESUME_LINK, ABOUT_ME } from '../constants'
 import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => (
@@ -11,15 +10,15 @@ const Footer = () => (
     >
       <div className={"md:flex-1 flex-col flex justify-center items-center md:items-start"}>
         <h2 className="text-xl font-bold font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
-          {aboutMe.name}
+          {ABOUT_ME.name}
         </h2>
         <p
           className={`font-poppins font-normal text-center md:text-left text-dimWhite text-[16px] leading-[30.8px] max-w-[470px] mt-5`}
         >
-        {aboutMe.tagLine}
+        {ABOUT_ME.tagLine}
         </p>
         <div className="flex flex-row mt-4">
-          {socialMedia.map((social, index) => (
+          {SOCIAL_MEDIA.map((social, index) => (
             <a
               href={social.link}
               target="_blank"
@@ -33,10 +32,10 @@ const Footer = () => (
         </div>
 
         <div className="grid grid-cols-2">
-          <a href={resumeLink} target="_blank">
+          <a href={RESUME_LINK} target="_blank">
             <Button styles="mt-10 mr-3" text="Resume" icon="AiFillGithub" />
           </a>
-          <a href={repoLink} target="_blank">
+          <a href={REPO_LINK} target="_blank">
             <Button
               styles="mt-10 inline-flex items-center justify-center"
               text="Star"

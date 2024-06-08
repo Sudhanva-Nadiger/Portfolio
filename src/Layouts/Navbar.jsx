@@ -1,4 +1,4 @@
-import { content } from "../Content";
+import { CONTENT } from "../constants";
 import { useState } from "react";
 import close from '../assets/images/close.svg'
 import menu from '../assets/images/menu.svg'
@@ -6,7 +6,7 @@ import Logo from "../components/Logo";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const { navs } = content
+  const { navs } = CONTENT
 
   return (
     <nav className="w-full z-10 flex justify-between items-center absolute left-0 top-0 bg-transparent">

@@ -1,5 +1,5 @@
 
-import { educationList } from "../Content";
+import { EDUCATION_LIST } from "../constants";
 import Lottie from "react-lottie";
 import animationData from "../assets/images/Education/login.json";
 import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ const FeatureCard = (props) => {
   const { icon, title, degree, duration, content1, content2, index } = props
   return <div
     className={`flex sm:flex-row flex-col p-2 rounded-[20px]
-	${index === educationList.length - 1 ? "mb-0" : "mb-6"} feature-card`}
+	${index === EDUCATION_LIST.length - 1 ? "mb-0" : "mb-6"} feature-card`}
   >
     <div
       className={`w-[64px] h-[64px] rounded-full items-center justify-center`}
@@ -65,7 +65,7 @@ const Education = () => {
 
 
         <div className={`flex-1 flex justify-center items-start flex-col`}>
-          {educationList.map((feature, index) => (
+          {EDUCATION_LIST.map((feature, index) => (
             <FeatureCard key={feature.id} index={index} {...feature} />
           ))}
         </div>

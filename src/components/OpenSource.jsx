@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { openSourceContributions } from "../Content";
+import { OPEN_SOURCE_CONTRIBUTIONS } from "../constants";
 import { DiGitMerge, DiGitPullRequest } from "react-icons/di";
 import { VscIssues } from "react-icons/vsc";
 import { motion } from "framer-motion";
@@ -87,7 +87,7 @@ const OpenSource = () => {
 
       <div className="py-5 mb-8 flex justify-center">
         <div className="grid grid-cols-1 justify-center gap-8 mt-4 md:mt-8 tablet:grid-cols-2 laptop:grid-cols-3 sm:grid-cols-2">
-          {openSourceContributions.map((contribution, index) => {
+          {OPEN_SOURCE_CONTRIBUTIONS.map((contribution, index) => {
             return <Contribution
               key={contribution.id}
               index={index}

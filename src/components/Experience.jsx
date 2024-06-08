@@ -8,9 +8,9 @@ import { BsLink45Deg } from "react-icons/bs";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { content } from "../Content";
+import { EXPERIENCES } from "../constants";
 
-const Content = ({ text, link }) => {
+const Content = ({ text, link, tech }) => {
     return (
         <div>
             <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
@@ -26,6 +26,28 @@ const Content = ({ text, link }) => {
                     ""
                 )}
             </p>
+
+            {tech && (
+                <>
+                    <p className="font-poppins font-normal text-dimWhite mt-3">
+                        Tech Stack
+                    </p>
+                    <div className="mt-2 text-gray-500 capitalize dark:text-gray-300">
+                        <p className="flex sm:flex-row">
+                            {tech.map((tech, index) => (
+                                <span
+                                    key={tech.id}
+                                    index={index}
+                                    className="text-dimWhite mr-5 text-[20px] hover:text-[#8dbbeb] tooltip"
+                                >
+                                    {React.createElement(tech.icon)}
+                                    <span className="tooltiptext">{tech.name}</span>
+                                </span>
+                            ))}
+                        </p>
+                    </div>
+                </>
+            )}
         </div>
     );
 };
@@ -47,7 +69,7 @@ const ExperienceCard = ({ experience }) => {
                     <img
                         src={logo}
                         alt={organisation}
-                        className='w-[60%] h-[60%] object-contain'
+                        className='w-[60%] h-[60%] object-center'
                     />
                 </div>
             }
@@ -59,7 +81,7 @@ const ExperienceCard = ({ experience }) => {
             <ol className='relative ml-5 mt-5 list-none space-y-2 border-l border-gray-200'>
                 {positions.map((position, index) => {
                     return <li
-                    key={`card-${index}`}
+                        key={`card-${index}`}
                         className={`${index === positions.length - 1 ? "mb-0" : "mb-4"
                             } ml-4`}
                     >
@@ -82,7 +104,6 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
-    const experiences = content.experiences
     return (
         <div id="experience" className="sm:mb-0 sm:px-16 px-6 py-4">
             <motion.h1
@@ -94,7 +115,7 @@ const Experience = () => {
 
             <div className='mt-10 flex flex-col'>
                 <VerticalTimeline>
-                    {experiences.map((experience, index) => (
+                    {EXPERIENCES.map((experience, index) => (
                         <ExperienceCard
                             key={`experience-${index}`}
                             experience={experience}

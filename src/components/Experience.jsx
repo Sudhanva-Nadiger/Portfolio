@@ -33,12 +33,12 @@ const Content = ({ text, link, tech }) => {
                         Tech Stack
                     </p>
                     <div className="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                        <p className="flex sm:flex-row">
+                        <p className="flex sm:flex-row flex-wrap gap-5">
                             {tech.map((tech, index) => (
                                 <span
                                     key={tech.id}
                                     index={index}
-                                    className="text-dimWhite mr-5 text-[20px] hover:text-[#8dbbeb] tooltip"
+                                    className="text-dimWhite text-[20px] hover:text-[#8dbbeb] tooltip"
                                 >
                                     {React.createElement(tech.icon)}
                                     <span className="tooltiptext">{tech.name}</span>

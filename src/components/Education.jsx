@@ -17,7 +17,7 @@ const defaultOptions = {
 const FeatureCard = (props) => {
   const { icon, title, degree, duration, content1, content2, index } = props
   return <div
-    className={`flex sm:flex-row flex-col p-2 rounded-[20px]
+    className={`flex sm:flex-row flex-col p-4 rounded-[20px]
 	${index === EDUCATION_LIST.length - 1 ? "mb-0" : "mb-6"} feature-card`}
   >
     <div

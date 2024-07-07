@@ -7,8 +7,8 @@ export { EDUCATION_LIST } from './education';
 export { PROJECTS } from './projects';
 export { OPEN_SOURCE_CONTRIBUTIONS } from './openSource';
 
-export const RESUME_LINK = "https://drive.google.com/file/d/1bsOdkY7l752EOJWdn12NO4mBrVTx5bvq/view";
-export const REPO_LINK = "https://github.com/Sudhanva-Nadiger";
+export const RESUME_LINK = "https://drive.google.com/file/d/1fAlHoNfCHkJCkmcpGFzbanTZorT2r2U_/view";
+export const REPO_LINK = "https://github.com/Sudhanva-Nadiger/Portfolio";
 
 export const CONTENT = {
     navs: [
@@ -43,7 +43,7 @@ export const CONTENT = {
         hero_content: [
             {
                 count: "",
-                text: "Student developer based in India. Aspiring Software Development Engineer.",
+                text: "Developer based in India. Aspiring Software Development Engineer.",
             },
         ],
     },
@@ -55,6 +55,6 @@ export const CONTENT = {
 
 export const ABOUT_ME = {
     name: "Sudhanva Nadiger",
-    tagLine: "Final year student at NITK | Executive Member @ ACM NITK | Open Source Contributor",
+    tagLine: "Insanely ambitious coder | SWE intern @Appleute | Open source contributor",
     intro: CONTENT.hero.hero_content.text
 };

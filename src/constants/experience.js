@@ -26,7 +26,7 @@ export const EXPERIENCES = [
         duration: "May-2024 - Current",
         content: [
           {
-            text: "Working on Full stack projects and App development with Agile developoment.",
+            text: "Working on Full stack projects and App development with Agile Methodology.",
             tech: [
               {
                 id: "f-2",

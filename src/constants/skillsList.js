@@ -14,8 +14,10 @@ import {
     SiJava,
     SiJavascript,
     SiJquery,
+    SiKubernetes,
     SiMysql,
     SiNetlify,
+    SiPostman,
     SiPython,
     SiReact,
     SiRedux,
@@ -153,6 +155,17 @@ export const SKILLS_LIST = [
           icon: SiIntellijidea,
           name: "IntelliJ",
         },
+        {
+          id: "t-9",
+          icon: SiPostman,
+          name: "Postman",
+        },
+        {
+          id: "t-10",
+          icon: SiKubernetes,
+          name: "Kubernetes",
+        },
+
       ],
     },
   ]

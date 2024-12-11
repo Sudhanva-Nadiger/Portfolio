@@ -43,7 +43,7 @@ export const CONTENT = {
         hero_content: [
             {
                 count: "",
-                text: "Developer based in India. Aspiring Software Development Engineer.",
+                text: "Developer based in India. Software Development Engineer.",
             },
         ],
     },
@@ -55,6 +55,6 @@ export const CONTENT = {
 
 export const ABOUT_ME = {
     name: "Sudhanva Nadiger",
-    tagLine: "Insanely ambitious coder | SWE intern @Appleute | Open source contributor",
+    tagLine: "Insanely ambitious coder | SDE-1 @Flipkart | Ex-SWE intern @Appleute | Open source contributor",
     intro: CONTENT.hero.hero_content.text
 };

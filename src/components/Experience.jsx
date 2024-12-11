@@ -92,7 +92,7 @@ const ExperienceCard = ({ experience }) => {
                         <time className="mb-1 text-sm font-normal leading-none text-gray-400">
                             {position.duration}
                         </time>
-                        {position.content.map((info, index) => (
+                        {position.content?.map((info, index) => (
                             <Content key={`content-${index}`} index={index} {...info} />
                         ))}
                         <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></p>

@@ -1,6 +1,7 @@
 import TriNit from "../assets/images/Experience/TriNit.jfif";
 import acm from '../assets/images/Experience/acm.png';
 import appleute from '../assets/images/Experience/appleute.svg';
+import flipkart from '../assets/images/Experience/flipkart.png';
 
 import {
     SiAntdesign,
@@ -16,6 +17,17 @@ import {
 
 
 export const EXPERIENCES = [
+  {
+    organisation: "Flipkart",
+    logo: flipkart,
+    link: "https://www.flipkart.com/",
+    positions: [
+      {
+        title: "Software Development Engineer",
+        duration: "Oct 2024"
+      },
+    ],
+  },
   {
     organisation: "Appleute",
     logo: appleute,

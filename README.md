@@ -1,28 +1,63 @@
-# <p align="center">Personal Portfolio</p>
-![image](https://user-images.githubusercontent.com/93595710/218269495-00433bd1-e725-4bf5-94fd-2510d4539215.png)
+# Sudhanva Nadiger — Portfolio
 
-## Deploy link🤹‍♂️: [https://sudhanva-nadiger.netlify.app/](https://sudhanva-nadiger.netlify.app/)
+A modern, responsive developer portfolio built with React, TypeScript, and Tailwind CSS. Features a dark-first design with an optional light theme, smooth animations, and interactive UI elements.
 
-## Tech Stacks 🔨:
+**Live:** [sudhanvanadiger.vercel.app](https://sudhanvanadiger.vercel.app/)
 
-- Frameworks:
-  - [ReactJs](https://reactjs.org/)
-  - [TailwindCSS](https://tailwindcss.com/)
-  
-- Libraries/Tools
-  - [MUI](https://merakiui.com/components/)
-  - [Vite](https://vitejs.dev/)
-  - [React Icon](https://react-icons.github.io/react-icons%22)
-  - [Framer motion](https://www.framer.com/)
-  - [React Lottie](https://www.npmjs.com/package/react-lottie)
-  
-## Resources/Inspiration :
-- [Javascript Mastery](https://youtube.com/@javascriptmastery)
-- [Parth Mittal portfolio](https://parthmittal.netlify.app/)
-- [Tailwind](https://tailwindcss.com/)
-- [React js](https://reactjs.org/docs/getting-started.html)
-- [Shridhar-c-25/react_portfolio_2](https://github.com/Sridhar-C-25/react_portfolio_2)
- 
- ## Additional info
- - Yes you can use this repo for your portfolio as template.
- - Any type of contributions are welcome.
+## Tech Stack
+
+- **Framework:** React 18 + Vite 5
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 3.4 with CSS custom properties (HSL theming)
+- **Animations:** Framer Motion, Lottie (lottie-react)
+- **Icons:** Lucide React, React Icons
+- **Deployment:** Vercel
+
+## Features
+
+- Dark mode as default with toggleable light theme
+- Custom animated cursor with magnetic hover effects on links and buttons
+- Infinite scrolling marquee keyword strip
+- Lottie animations (hero section, education section, loading screen)
+- Active section highlighting in navbar via IntersectionObserver
+- Paginated open-source contributions with org filtering
+- Scroll-to-top button and floating TL;DR shortcut
+- Responsive design across all breakpoints
+- Smooth scroll with hash-based navigation
+
+## Sections
+
+| Section | Description |
+|---------|-------------|
+| Hero | Introduction with Lottie animation, social links, and CTAs |
+| Experience | Timeline of work experience at Nutanix, Flipkart, Appleute, and more |
+| Skills | Interactive grid of tech skills grouped by category |
+| Education | Academic background with institution logo and Lottie animation |
+| Projects | Project showcase with icons and tech stack tags |
+| Open Source | Paginated list of open-source contributions across multiple orgs |
+| TL;DR | Quick summary with key stats and a stylized code block |
+| Contact | Profile photo, social links, email, and resume |
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Inspiration
+
+- [devar.sh](https://www.devar.sh/)
+- [utkarshkumar.vercel.app](https://utkarshkumar.vercel.app/)
+- [parthsharma.me](https://parthsharma.me/)
+- [parthmittal.netlify.app](https://parthmittal.netlify.app/)
+
+## License
+
+Feel free to use this as a template for your own portfolio. Contributions are welcome.

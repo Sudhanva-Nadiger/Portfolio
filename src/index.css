@@ -1,210 +1,201 @@
-/* Inria serif */
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap");
-/* Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* Paprika */
-@import url("https://fonts.googleapis.com/css2?family=Paprika&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-:root{
-  --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #bfd7fb -78.47%,
-    #a8c8f0 91.61%
-  );
-  --black-gradient2: linear-gradient(
-    144.39deg,
-    #5fb2f6 -278.56%,
-    #4c73ae -78.47%,
-    #4a709f 91.61%
-  );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-  --scrollbar-primary: #B6CCF5;
-  --scrollbar-secondary: rgb(95, 148, 239);
-}
-
-* {
-  scroll-behavior: smooth;
-}
-
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-secondary) var(--scrollbar-primary);
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 15px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--scrollbar-primary);
-  border-radius: 0px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-secondary);
-  border-radius: 14px;
-  border: 3px solid var(--scrollbar-primary);
-}
-
-
-
-
 @layer base {
+  :root {
+    --background: 220 20% 96%;
+    --foreground: 220 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 40%;
+    --border: 220 15% 85%;
+    --accent: 199 89% 38%;
+    --accent-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 96%;
+    --card: 222 35% 9%;
+    --card-foreground: 210 40% 96%;
+    --muted: 223 25% 14%;
+    --muted-foreground: 218 15% 55%;
+    --border: 223 20% 16%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
   html {
     scroll-behavior: smooth;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span {
-    @apply font-Poppins text-dark_primary;
-  }
-  h1 {
-    @apply font-Poppins  sm:text-6xl text-4xl font-extrabold;
+    scroll-padding-top: 5rem;
   }
 
-  h2 {
-    @apply font-Poppins  sm:text-5xl text-3xl font-bold;
-  }
-  h3 {
-    @apply font-Poppins text-5xl;
-  }
-  h4 {
-    @apply font-Poppins md:text-4xl text-3xl !leading-relaxed;
-  }
-  h6 {
-    @apply font-Poppins font-bold text-[#253D57] leading-8;
+  @media (pointer: fine) {
+    a, button, [data-cursor-hover] {
+      cursor: pointer !important;
+    }
   }
 
-  p {
-    @apply font-Poppins text-[0.95rem];
+  body {
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  button {
-    @apply font-Poppins;
+
+  ::selection {
+    @apply bg-accent/30 text-foreground;
   }
-  input,
-  textarea {
-    @apply bg-transparent outline-none font-Poppins;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
   }
 }
 
-@layer utilities {
-  .btn {
-    @apply py-2 px-9 border-2 rounded-md
-     border-dark_primary rounded-br-3xl font-medium;
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-5xl px-6 py-20 md:py-28 relative;
   }
-  .title {
-    @apply md:text-3xl text-2xl;
+
+  .section-title {
+    @apply text-2xl font-bold tracking-tight md:text-3xl;
   }
-  .subtitle {
-    @apply text-gray-500;
+
+  .section-subtitle {
+    @apply mt-2 text-muted-foreground max-w-2xl;
+  }
+
+  .glass-card {
+    @apply rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm
+           transition-colors duration-300 hover:border-border;
+  }
+
+  .gradient-text {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  :root .gradient-text {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #0ea5e9 0.89%,
+      #0891b2 30%,
+      #0e7490 55%,
+      #155e75 80%,
+      #164e63 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .dark .gradient-text {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-border
+           bg-muted/50 px-3 py-1 text-xs font-medium text-muted-foreground
+           transition-colors hover:border-accent/30 hover:text-foreground;
+  }
+
+  .marquee-scroll {
+    animation: scrollLeft 25s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .skill-card {
+    @apply flex flex-col items-center justify-center gap-2 rounded-xl
+           bg-muted/40 px-3 py-3.5
+           transition-all duration-300 select-none cursor-default;
+  }
+
+  .skill-card:hover {
+    @apply bg-accent/10;
+    box-shadow: 0 0 16px hsl(var(--accent) / 0.08);
   }
 }
-.swiper-pagination-bullet {
-  @apply w-3 h-3 bg-dark_primary;
+
+/* Ambient gradient orbs */
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
 }
 
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
 
-.text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #B6CCF5 0.89%,
-    #7ca5f3 17.23%,
-    #769fea 42.04%,
-    #5a8ce8 55.12%,
-    #4a85f4 71.54%,
-    #0a58ea 100%
+.cyan__gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  filter: blur(150px);
+  opacity: 0.15;
 }
 
-.text-gradient2 {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #171e32 0.89%,
-    #22324f 17.23%,
-    #193d80 42.04%,
-    #153570 55.12%,
-    #0c2045 71.54%,
-    #040b19 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+:root .cyan__gradient {
+  opacity: 0.1;
 }
 
-.feature-card:hover {
-  background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
-}
-#projects .feature-card:hover {
-  background: var(--black-gradient2);
-  box-shadow: var(--card-shadow);
+.dark .cyan__gradient {
+  opacity: 0.08;
 }
 
-.feedback-card {
-  background: transparent;
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
 }
 
-.proj:hover .p{
-  color: rgb(182, 194, 199);
+.dark .white__gradient {
+  background: rgba(255, 255, 255, 0.03);
 }
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 100px;
-  background-color: rgb(10, 10, 10);
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -50px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent black transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
-filterShadow {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-}
-

@@ -57,6 +57,7 @@ export default function Experience() {
                     href={exp.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Visit ${exp.organisation} website`}
                     className="shrink-0 text-muted-foreground transition-colors hover:text-foreground"
                   >
                     <ExternalLink className="h-4 w-4" />
@@ -79,7 +80,7 @@ export default function Experience() {
                         }
                       >
                         <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                          <h4 className="text-sm font-medium">{pos.title}</h4>
+                          <h3 className="text-sm font-medium">{pos.title}</h3>
                           <span className="text-xs text-muted-foreground">
                             {pos.duration}
                           </span>

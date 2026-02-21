@@ -65,6 +65,7 @@ export default function Navbar() {
         <Magnetic strength={0.3}>
           <a
             href="#"
+            aria-label="Go to top"
             className="text-lg font-bold tracking-tight transition-colors hover:text-accent"
           >
             <span className="text-muted-foreground">&lt;</span>

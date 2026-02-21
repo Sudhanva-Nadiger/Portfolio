@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sudhanvanadiger.vercel.app/sitemap.xml

@@ -136,6 +136,7 @@ export default function Hero() {
         {/* Scroll down arrow */}
         <motion.a
           href="#experience"
+          aria-label="Scroll to experience section"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}

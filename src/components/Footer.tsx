@@ -76,11 +76,11 @@ export default function Footer() {
         </div>
       </motion.div>
 
-      <div className="mt-16 border-t border-border/50 pt-8 text-center">
+      <footer className="mt-16 border-t border-border/50 pt-8 text-center">
         <p className="text-xs text-muted-foreground">
           &copy; {new Date().getFullYear()} {ABOUT_ME.name}.
         </p>
-      </div>
+      </footer>
     </section>
   );
 }

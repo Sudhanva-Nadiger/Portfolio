@@ -54,7 +54,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         title: "Member of Technical Staff",
-        duration: "Jan 2025 — Present",
+        duration: "Jan 2026 — Present",
         content: [
           {
             text: "Working with the CPaaS (Compute Platform as a Service) team.",
@@ -79,7 +79,7 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         title: "Software Development Engineer",
-        duration: "Oct 2024 — Jan 2025",
+        duration: "Oct 2024 — Jan 2026",
         content: [
           {
             text: "Played a key role in migrating non-customer outbound workflows from a monolith to microservices by developing several APIs and collaborating with UI and QA teams.",

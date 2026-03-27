@@ -57,7 +57,7 @@ export const EXPERIENCES: Experience[] = [
         duration: "Jan 2026 — Present",
         content: [
           {
-            text: "Working with the CPaaS (Compute Platform as a Service) team.",
+            text: "Working with the CPaaS (Cloud Platform as a Service) team.",
             tech: [
               { id: "nt-1", icon: SiGo, name: "Go" },
               { id: "nt-2", icon: SiPython, name: "Python" },
